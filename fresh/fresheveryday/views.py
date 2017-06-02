@@ -5,6 +5,7 @@ from django.template import RequestContext
 from django.http import HttpResponse,JsonResponse
 from django.http import HttpResponseRedirect
 from . import decorator
+from hashlib import sha1
 # Create your views here.
 def index(request):
     return render(request,'fresheveryday/index.html')
@@ -56,18 +57,24 @@ def pic_handle(request):
     fpwd = re.get('pwd')
     femail = re.get('email')
     re = FreshInfo.objects.filter(fname = fname).count()
-    if re =='1':
+    if re ==1:
         return render(request, 'fresheveryday/register.html')
     else:
+        s1 = sha1()
+        s1.update(fpwd)
+        fpwd = s1.hexdigest()
         data = FreshInfo.objects.create(fname=fname, fpwd=fpwd, femail=femail)
         data.save()
-        return render(request, 'fresheveryday/index.html', {'name': fname})
+        return render(request, 'fresheveryday/login.html', {'name': fname})
 
 
 def pic_handle1(request):
     re = request.POST
     name = re.get('username')
     pwd = re.get('pwd')
+    s1 = sha1()
+    s1.update(pwd)
+    pwd = s1.hexdigest()
     jizhu = re.get('jizhu', 0)
     dict = FreshInfo.objects.filter(fname=name)
     if len(dict) == 1:
