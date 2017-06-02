@@ -5,11 +5,27 @@
 	<title>天天生鲜-登录</title>
 	<link rel="stylesheet" type="text/css" href="/static/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="/static/css/main.css">
+    <script type="text/javascript" src="/static/js/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function () {
+            if({{ hint }} ==1){
+            $('.user_error').html('用户名或密码错误').show();
+            }
+            if({{ hint }} ==0){
+            $('.user_error').html('用户名不存在请注册').show();
+            }
+
+            $('.name_input').focus(function () {
+                $('.user_error').hide();
+            });
+		});
+
+    </script>
 
 </head>
 <body>
 	<div class="login_top clearfix">
-		<a href="index.html" class="login_logo"><img src="/static/images/logo02.png"></a>	
+		<a href="/" class="login_logo"><img src="/static/images/logo02.png"></a>
 	</div>
 
 	<div class="login_form_bg">
@@ -25,7 +41,7 @@
 					<form method="post" action="/pic_handle1/">
                         {% csrf_token %}
 						<input type="text" name="username" class="name_input" placeholder="请输入用户名">
-						<div class="user_error">输入错误</div>
+						<div class="user_error">用户名错误</div>
 						<input type="password" name="pwd" class="pass_input" placeholder="请输入密码">
 						<div class="pwd_error">输入错误</div>
 						<div class="more_input clearfix">

@@ -15,11 +15,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/fresheveryday/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1275">
-              <caret line="89" column="18" lean-forward="false" selection-start-line="89" selection-start-column="18" selection-end-line="89" selection-end-column="18" />
+            <state relative-caret-position="1245">
+              <caret line="83" column="34" lean-forward="true" selection-start-line="83" selection-start-column="34" selection-end-line="83" selection-end-column="34" />
               <folding>
                 <element signature="e#15#59#0" expanded="true" />
               </folding>
@@ -27,21 +27,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user_center_site.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/fresheveryday/user_center_site.html">
+      <file leaf-file-name="cart.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/fresheveryday/cart.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="17" lean-forward="false" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+            <state relative-caret-position="210">
+              <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/fresheveryday/login.html">
+      <file leaf-file-name="decorator.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fresheveryday/decorator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" column="48" lean-forward="false" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="48" />
+            <state relative-caret-position="165">
+              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding>
+                <element signature="e#15#52#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="list.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/fresheveryday/list.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="47" lean-forward="true" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -50,18 +62,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/fresheveryday/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="36" lean-forward="false" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user_center_info.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/fresheveryday/user_center_info.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="20" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+            <state relative-caret-position="330">
+              <caret line="22" column="40" lean-forward="false" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -70,18 +72,28 @@
       <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="22" lean-forward="false" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+            <state relative-caret-position="375">
+              <caret line="31" column="47" lean-forward="false" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="47" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user_center_order.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/fresheveryday/user_center_order.html">
+      <file leaf-file-name="user_center_info.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/fresheveryday/user_center_info.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="17" lean-forward="false" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/fresheveryday/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -90,8 +102,8 @@
       <file leaf-file-name="register.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/fresheveryday/register.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
-              <caret line="41" column="25" lean-forward="false" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
+            <state relative-caret-position="435">
+              <caret line="29" column="32" lean-forward="false" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -100,21 +112,9 @@
       <file leaf-file-name="register.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/js/register.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="705">
-              <caret line="47" column="9" lean-forward="false" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
+            <state relative-caret-position="236">
+              <caret line="47" column="9" lean-forward="true" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fresheveryday/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -125,6 +125,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -150,20 +151,21 @@
         <option value="$PROJECT_DIR$/fresheveryday/models.py" />
         <option value="$PROJECT_DIR$/templates/fresheveryday/detail.html" />
         <option value="$PROJECT_DIR$/templates/fresheveryday/list.html" />
-        <option value="$PROJECT_DIR$/templates/fresheveryday/cart.html" />
         <option value="$PROJECT_DIR$/templates/fresheveryday/place_order.html" />
-        <option value="$PROJECT_DIR$/fresh/settings.py" />
-        <option value="$PROJECT_DIR$/templates/fresheveryday/login.html" />
         <option value="$PROJECT_DIR$/templates/fresheveryday/base.html" />
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/fresheveryday/urls.py" />
         <option value="$PROJECT_DIR$/templates/fresheveryday/register.html" />
         <option value="$PROJECT_DIR$/static/js/register.js" />
-        <option value="$PROJECT_DIR$/fresheveryday/views.py" />
         <option value="$PROJECT_DIR$/templates/fresheveryday/index.html" />
         <option value="$PROJECT_DIR$/templates/fresheveryday/user_center_info.html" />
         <option value="$PROJECT_DIR$/templates/fresheveryday/user_center_order.html" />
         <option value="$PROJECT_DIR$/templates/fresheveryday/user_center_site.html" />
+        <option value="$PROJECT_DIR$/fresh/settings.py" />
+        <option value="$PROJECT_DIR$/templates/fresheveryday/login.html" />
+        <option value="$PROJECT_DIR$/templates/fresheveryday/cart.html" />
+        <option value="$PROJECT_DIR$/fresheveryday/views.py" />
+        <option value="$PROJECT_DIR$/fresheveryday/decorator.py" />
       </list>
     </option>
   </component>
@@ -760,6 +762,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -767,6 +770,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1980">
           <caret line="132" column="43" lean-forward="false" selection-start-line="132" selection-start-column="43" selection-end-line="132" selection-end-column="43" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -795,24 +799,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/fresheveryday/cart.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1140">
-          <caret line="76" column="59" lean-forward="true" selection-start-line="76" selection-start-column="59" selection-end-line="76" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/fresheveryday/detail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1440">
           <caret line="96" column="32" lean-forward="true" selection-start-line="96" selection-start-column="32" selection-end-line="96" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/fresheveryday/list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="17" column="47" lean-forward="true" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -834,6 +825,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
           <caret line="980" column="10" lean-forward="false" selection-start-line="980" selection-start-column="10" selection-end-line="980" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -841,13 +833,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/fresheveryday/place_order.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -855,13 +841,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
           <caret line="20" column="17" lean-forward="false" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fresh/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="82" column="30" lean-forward="false" selection-start-line="82" selection-start-column="30" selection-end-line="82" selection-end-column="30" />
           <folding />
         </state>
       </provider>
@@ -873,77 +852,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/fresheveryday/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="48" lean-forward="false" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/lib/python2.7/dist-packages/django/template/defaultfilters.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
           <caret line="828" column="4" lean-forward="false" selection-start-line="828" selection-start-column="4" selection-end-line="828" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="22" lean-forward="false" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fresheveryday/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/fresheveryday/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="41" column="25" lean-forward="false" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/register.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="47" column="9" lean-forward="false" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fresheveryday/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1275">
-          <caret line="89" column="18" lean-forward="false" selection-start-line="89" selection-start-column="18" selection-end-line="89" selection-end-column="18" />
-          <folding>
-            <element signature="e#15#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/fresheveryday/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="36" lean-forward="false" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/fresheveryday/user_center_info.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="20" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -956,11 +868,121 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/fresh/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1305">
+          <caret line="87" column="1" lean-forward="true" selection-start-line="87" selection-start-column="1" selection-end-line="87" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/fresheveryday/user_center_site.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="17" lean-forward="false" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+        <state relative-caret-position="255">
+          <caret line="17" column="65" lean-forward="true" selection-start-line="17" selection-start-column="65" selection-end-line="17" selection-end-column="65" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/fresheveryday/place_order.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fresheveryday/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="43" lean-forward="false" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/fresheveryday/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="47" lean-forward="true" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/fresheveryday/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/fresheveryday/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="32" lean-forward="false" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/register.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="47" column="9" lean-forward="true" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/fresheveryday/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="40" lean-forward="false" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/fresheveryday/user_center_info.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/fresheveryday/cart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="31" column="47" lean-forward="false" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fresheveryday/decorator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="e#15#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fresheveryday/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1245">
+          <caret line="83" column="34" lean-forward="true" selection-start-line="83" selection-start-column="34" selection-end-line="83" selection-end-column="34" />
+          <folding>
+            <element signature="e#15#59#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

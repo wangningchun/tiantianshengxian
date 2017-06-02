@@ -4,6 +4,7 @@ from models import FreshInfo
 from django.template import RequestContext
 from django.http import HttpResponse,JsonResponse
 from django.http import HttpResponseRedirect
+from . import decorator
 # Create your views here.
 def index(request):
     return render(request,'fresheveryday/index.html')
@@ -17,6 +18,7 @@ def list(request):
 def login(request):
     return render(request,'fresheveryday/login.html')
 
+@decorator.login
 def cart(request):
     return render(request,'fresheveryday/cart.html')
 
@@ -26,6 +28,7 @@ def place_order(request):
 def detail(request):
     return render(request,'fresheveryday/detail.html')
 
+@decorator.login
 def user_center_info(request):
     name = request.session['user_name']
     if name:
@@ -36,7 +39,7 @@ def user_center_info(request):
 
     else:
         return render(request,'fresheveryday/index.html')
-
+@decorator.login
 def user_center_order(request):
     return render(request,'fresheveryday/user_center_order.html')
 
@@ -52,13 +55,14 @@ def pic_handle(request):
     fname = re.get('user_name')
     fpwd = re.get('pwd')
     femail = re.get('email')
-    re = FreshInfo.objects.filter(fname = fname)
+    re = FreshInfo.objects.filter(fname = fname).count()
     if re =='1':
         return render(request, 'fresheveryday/register.html')
     else:
         data = FreshInfo.objects.create(fname=fname, fpwd=fpwd, femail=femail)
         data.save()
         return render(request, 'fresheveryday/index.html', {'name': fname})
+
 
 def pic_handle1(request):
     re = request.POST
@@ -80,16 +84,16 @@ def pic_handle1(request):
             request.session['user_name'] = name
             return red
         else:
-            return render(request, 'fresheveryday/login.html')
+            return render(request, 'fresheveryday/login.html',{'hint':1})
     else:
-        return render(request,'fresheveryday/register.html')
+        return render(request,'fresheveryday/login.html',{'hint':0})
 
 def pic_handle2(request):
     re = request.POST
     name = request.session['user_name']
     data = FreshInfo.objects.get(fname=name)
     data.frecipients =re.get('newname')
-    data.faddress =re.get('app',0)
+    data.faddress =re.get('app','')
     data.fyoubian =re.get('youbian')
     data.fphone =re.get('phone')
     data.save()
