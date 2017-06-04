@@ -7,18 +7,10 @@ from django.http import HttpResponseRedirect
 from . import decorator
 from hashlib import sha1
 # Create your views here.
-def index(request):
-    return render(request,'fresheveryday/index.html')
-
 def register(request):
     return render(request,'fresheveryday/register.html')
-
-def list(request):
-    return render(request,'fresheveryday/list.html')
-
 def login(request):
     return render(request,'fresheveryday/login.html')
-
 @decorator.login
 def cart(request):
     return render(request,'fresheveryday/cart.html')

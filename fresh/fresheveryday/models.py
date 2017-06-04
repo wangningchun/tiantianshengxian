@@ -10,3 +10,4 @@ class FreshInfo(models.Model):
     faddress = models.CharField(max_length=100,default='')
     fyoubian = models.CharField(max_length=10,default='')
     fphone = models.CharField(max_length=20,default='')
+
