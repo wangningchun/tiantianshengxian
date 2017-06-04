@@ -25,12 +25,30 @@ def index(request):
     }
     return render(request,'fresheveryday/index.html',context)
 
-def list(request,id):
-    lists = GoodsInfo.objects.filter(gtype_id=id)
-    p = Paginator(lists, 10)
-    list2 = p.page(1)
-    plist = p.page_range
-    return render(request,'fresheveryday/list.html',{'list2':list2,'plist':plist})
+def list(request,id,pid):
+    list_type = TypeInfo.objects.get(id = int(id))
+    list_type1 = list_type.goodsinfo_set.order_by('-id')[0:2]
+    lists = GoodsInfo.objects.filter(gtype_id=int(id))
+    re = request.GET
+    if re.get('a') =='0':
+        liset_gprice = lists.order_by('gprice')
+        p = Paginator(liset_gprice, 2)
+        list2 = p.page(pid)
+        plist = p.page_range
+        return render(request, 'fresheveryday/list.html', {'list2': list2, 'plist': plist, 'id': id,'list_type1':list_type1})
+    elif re.get('a') =='1':
+        liset_gprice = lists.order_by('gclick')
+        p = Paginator(liset_gprice, 2)
+        list2 = p.page(pid)
+        plist = p.page_range
+        return render(request, 'fresheveryday/list.html', {'list2': list2, 'plist': plist, 'id': id,'list_type1':list_type1})
+    else:
+
+        p = Paginator(lists, 2)
+        list2 = p.page(pid)
+        plist = p.page_range
+        return render(request,'fresheveryday/list.html',{'list2':list2,'plist':plist,'id':id,'list_type1':list_type1})
+
 
 def detail(request):
     re = request.GET

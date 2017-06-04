@@ -47,31 +47,28 @@
 			<div class="new_goods">
 				<h3>新品推荐</h3>
 				<ul>
+                    {% for i in list_type1 %}
 					<li>
-						<a href="#"><img src="/static/images/goods/goods001.jpg"></a>
-						<h4><a href="#">进口柠檬</a></h4>
-						<div class="prize">￥3.90</div>
+						<a href="/detail/?a={{ i.id }}"><img src="/static/{{ i.gpic }}"></a>
+						<h4><a href="#">{{ i.gtitle }}</a></h4>
+						<div class="prize">￥{{ i.gpirce }}</div>
 					</li>
-					<li>
-						<a href="#"><img src="/static/images/goods/goods002.jpg"></a>
-						<h4><a href="#">玫瑰香葡萄</a></h4>
-						<div class="prize">￥16.80</div>
-					</li>
+					{% endfor %}
 				</ul>
 			</div>
 		</div>
 
 		<div class="r_wrap fr clearfix">
 			<div class="sort_bar">
-				<a href="#" class="active">默认</a>
-				<a href="#">价格</a>
-				<a href="#">人气</a>
+				<a href="/list1_1/" class="active">默认</a>
+				<a href="/list{{ id }}_1/?a=0">价格</a>
+				<a href="/list{{ id }}_1/?a=1">人气</a>
 			</div>
 
 			<ul class="goods_type_list clearfix">
                 {% for i in list2 %}
 				<li>
-					<a href="detail.html"><img src="/static/{{ i.gpic }}"></a>
+					<a href="/detail/?a={{ i.id }}"><img src="/static/{{ i.gpic }}"></a>
 					<h4><a href="detail.html">{{ i.gtitle }}</a></h4>
 					<div class="operate">
 						<span class="prize">￥{{ i.gpirce }}</span>
@@ -83,12 +80,49 @@
 			</ul>
 
 			<div class="pagenation">
-				<a href="#">上一页</a>
+            {% if list2.has_previous %}
+				<a href="/list{{ id }}_{{ list2.number|add:-1 }}/">上一页</a>
+            {% endif %}
+                {% if list2.number == 1 %}
+                    <a href="#" class="active">1</a>
+                    <a href="/list{{ id }}_{{ list2.number|add:1 }}/">2</a>
+                    <a href="/list{{ id }}_{{ list2.number|add:2 }}/">3</a>
+                    <a href="/list{{ id }}_{{ list2.number|add:3 }}/">4</a>
+                    <a href="/list{{ id }}_{{ list2.number|add:4 }}/">5</a>
 
-                {% for i in plist %}
-				<a href="#" class="active">{{ i }}</a>
-                {% endfor %}
-				<a href="#">下一页></a>
+
+                {% elif list2.number == 2 %}
+                    <a href="/list{{ id }}_{{ list2.number|add:-1 }}/">1</a>
+                    <a href="#" class="active">2</a>
+                    <a href="/list{{ id }}_{{ list2.number|add:1 }}/">3</a>
+                    <a href="/list{{ id }}_{{ list2.number|add:2 }}/">4</a>
+                    <a href="/list{{ id }}_{{ list2.number|add:3 }}/">5</a>
+
+
+                {% elif list2.number == list2.paginator.num_pages|add:-1 %}
+                    <a href="/list{{ id }}_{{ list2.number|add:-3 }}/">{{ list2.number|add:-3 }}</a>
+                    <a href="/list{{ id }}_{{ list2.number|add:-2 }}/">{{ list2.number|add:-2 }}</a>
+                    <a href="/list{{ id }}_{{ list2.number|add:-1 }}/">{{ list2.number|add:-1 }}</a>
+                    <a href="#" class="active">{{ list2.number }}</a>
+                    <a href="/list{{ id }}_{{ list2.number|add:1 }}/">{{ list2.paginator.num_pages}}</a>
+
+                {% elif list2.number == list2.paginator.num_pages%}
+                    <a href="/list{{ id }}_{{ list2.number|add:-3 }}/">{{ list2.number|add:-4}}</a>
+                    <a href="/list{{ id }}_{{ list2.number|add:-2 }}/">{{ list2.number|add:-3 }}</a>
+                    <a href="/list{{ id }}_{{ list2.number|add:-1 }}/">{{ list2.number|add:-2 }}</a>
+                    <a href="/list{{ id }}_{{ list2.number|add:2 }}/">{{ list2.number|add:-1}}</a>
+                    <a href="#" class="active">{{ list2.number }}</a>
+                {% else %}
+                    <a href="/list{{ id }}_{{ list2.number|add:-2 }}/">{{ list2.number|add:-2 }}</a>
+                    <a href="/list{{ id }}_{{ list2.number|add:-1 }}/">{{ list2.number|add:-1 }}</a>
+                    <a href="#" class="active">{{ list2.number }}</a>
+                    <a href="/list{{ id }}_{{ list2.number|add:1 }}/">{{ list2.number|add:1 }}</a>
+                    <a href="/list{{ id }}_{{ list2.number|add:2 }}/">{{ list2.number|add:2 }}</a>
+                {% endif %}
+
+            {% if list2.has_next %}
+				<a href="/list{{ id }}_{{ list2.number|add:1 }}/">下一页></a>
+            {% endif %}
 			</div>
 		</div>
 	</div>
