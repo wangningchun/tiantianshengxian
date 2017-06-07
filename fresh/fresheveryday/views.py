@@ -6,35 +6,54 @@ from django.http import HttpResponse,JsonResponse
 from django.http import HttpResponseRedirect
 from . import decorator
 from hashlib import sha1
+from py_cart.models import *
 # Create your views here.
 def register(request):
     return render(request,'fresheveryday/register.html')
 def login(request):
     return render(request,'fresheveryday/login.html')
-@decorator.login
-def cart(request):
-    return render(request,'fresheveryday/cart.html')
 
 def place_order(request):
     return render(request,'fresheveryday/place_order.html')
 
 def detail(request):
-    return render(request,'fresheveryday/detail.html')
+    response = render(request, 'fresheveryday/detail.html')
+    re = request.GET
+    gid = re.get('a')
+    liulan = request.COOKIES.get('list','')
+    if liulan == '':
+        response.set_cookie('list',gid)
+    else:
+        liulan_list = liulan.split(',')
+        if liulan in liulan_list:
+            liulan_list.remove(gid)
+            liulan_list.insert(0,gid)
+        if len(liulan_list)>5:
+            liulan_list.pop()
+        liulan2 = ','.join(liulan_list)
+        response.set_cookie('list', liulan2)
+    return response
 
 @decorator.login
 def user_center_info(request):
+    cart = CartInfo.objects.all()
     name = request.session['user_name']
-    if name:
-        data = FreshInfo.objects.get(fname=name)
-        phone = data.fphone
-        add = data.faddress
-        return render(request,'fresheveryday/user_center_info.html',{'name':name,'phone':phone,'add':add})
+    data = FreshInfo.objects.get(fname=name)
+    phone = data.fphone
+    add = data.faddress
+    goods_list = []
+    liulan = request.COOKIES.get('list','')
+    if liulan != '':
+        liulan_list = liulan.split(',')
+        for i in liulan_list:
+            goods_list.append(GoodsInfo.objects.get(id = int(i)))
+    return render(request,'fresheveryday/user_center_info.html',{'name':name,'phone':phone,'add':add,'len':len(cart),'goods_list':goods_list})
 
-    else:
-        return render(request,'fresheveryday/index.html')
+
 @decorator.login
 def user_center_order(request):
-    return render(request,'fresheveryday/user_center_order.html')
+    cart = CartInfo.objects.all()
+    return render(request,'fresheveryday/user_center_order.html',{'len':len(cart)})
 
 def user_center_site(request):
     name = request.session['user_name']
@@ -107,3 +126,4 @@ def register1(request):
     uname = request.GET.get('uname')
     count = FreshInfo.objects.filter(fname = uname).count()
     return JsonResponse({'count':count})
+

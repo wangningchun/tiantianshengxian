@@ -1,3 +1,4 @@
+# coding=utf-8
 """
 Django settings for fresh project.
 
@@ -39,7 +40,10 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'fresheveryday',
     'df_goods',
+    'haystack',
+    'py_cart',
     'tinymce',
+
 )
 
 MIDDLEWARE_CLASSES = (
@@ -82,7 +86,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME':'tiantian',
-        'HOST':'192.168.61.132',
+        'HOST':'192.168.61.133',
         'PORT':'3306',
         'USER':'root',
         'PASSWORD':'wang',
@@ -119,3 +123,14 @@ TINYMCE_DEFAULT_CONFIG = {
     'width': 600,
     'height': 400,
 }
+
+HAYSTACK_CONNECTIONS = {
+    'default': {
+        #使用whoosh引擎
+        'ENGINE': 'haystack.backends.whoosh_cn_backend.WhooshEngine',
+        #索引文件路径
+        'PATH': os.path.join(BASE_DIR, 'whoosh_index'),
+    }
+}
+#当添加、修改、删除数据时，自动生成索引
+HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'
