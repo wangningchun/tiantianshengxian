@@ -89,9 +89,9 @@ def detail(request):
         response.set_cookie('list',pid)
     else:
         liulan_list = liulan.split(',')
-        if liulan in liulan_list:
+        if pid in liulan_list:
             liulan_list.remove(pid)
-            liulan_list.insert(0,pid)
+        liulan_list.insert(0,pid)
         if len(liulan_list)>5:
             liulan_list.pop()
         liulan2 = ','.join(liulan_list)

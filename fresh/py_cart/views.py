@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from models import CartInfo
+from fresheveryday.models import *
 from fresheveryday.decorator import *
 from django.http import HttpResponse,JsonResponse
 # Create your views here.
@@ -30,24 +31,24 @@ def cart(request):
         cart=0
     return render(request, 'fresheveryday/cart.html',{'list':list,'len':cart})
 
-def cartadd(request,id):
-    carts_num = CartInfo.objects.filter(goods=id).filter(user_id = request.session['user_id'])
+def count_change(request):
+    id = request.GET.get('id')
+    count = request.GET.get('count')
+    carts_num = CartInfo.objects.filter(id=id)
     carts = carts_num[0]
-    carts.count = carts.count+1
+    carts.count = count
     carts.save()
-    counts = CartInfo.objects.filter(goods=id)[0].count
-    return JsonResponse({'counts':counts})
+    return JsonResponse({'count':cart.count})
 
-def cartminus(request,id):
-    carts_num = CartInfo.objects.filter(goods=id).filter(user_id = request.session['user_id'])
-    carts = carts_num[0]
-    carts.count = carts.count-1
-    carts.save()
-    counts = CartInfo.objects.filter(goods=id)[0].count
-    return JsonResponse({'counts':counts})
+def delete(request):
+    id = request.GET.get('id')
+    cart = CartInfo.objects.get(id=id)
+    cart.delete()
+    return JsonResponse({'result':'ok'})
 
-def delete(request,id):
-    carts = CartInfo.objects.filter(goods=id)
-    carts[0].delete()
-    count = CartInfo.objects.all().count()
-    return JsonResponse({'count':count})
+def place_order(request):
+    user_id = request.session['user_id']
+    user = FreshInfo.objects.get(id = user_id)
+    gid = request.GET.getlist('gid')
+    cart = CartInfo.objects.filter(id__in = gid)
+    return render(request,'fresheveryday/place_order.html',{'cart':cart,'user':user})

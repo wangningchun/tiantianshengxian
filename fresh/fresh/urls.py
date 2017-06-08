@@ -21,6 +21,7 @@ urlpatterns = [
     url(r'^urls/',include('fresheveryday.urls')),
     url(r'^',include('df_goods.urls')),
     url(r'^cart/', include('py_cart.urls')),
+    url(r'^order/', include('df_order.urls')),
     url(r'^tinymce/', include('tinymce.urls')),
     url(r'^search/', include('haystack.urls')),
 

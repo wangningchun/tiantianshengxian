@@ -7,6 +7,8 @@ from django.http import HttpResponseRedirect
 from . import decorator
 from hashlib import sha1
 from py_cart.models import *
+from df_order.models import *
+from django.core.paginator import Paginator,Page
 # Create your views here.
 def register(request):
     return render(request,'fresheveryday/register.html')
@@ -49,11 +51,11 @@ def user_center_info(request):
             goods_list.append(GoodsInfo.objects.get(id = int(i)))
     return render(request,'fresheveryday/user_center_info.html',{'name':name,'phone':phone,'add':add,'len':len(cart),'goods_list':goods_list})
 
-
 @decorator.login
 def user_center_order(request):
     cart = CartInfo.objects.all()
-    return render(request,'fresheveryday/user_center_order.html',{'len':len(cart)})
+    reder = OrderInfo.objects.filter(user_id=request.session['user_id'])
+    return render(request,'fresheveryday/user_center_order.html',{'len':len(cart),'reder':reder})
 
 def user_center_site(request):
     name = request.session['user_name']
@@ -127,3 +129,9 @@ def register1(request):
     count = FreshInfo.objects.filter(fname = uname).count()
     return JsonResponse({'count':count})
 
+def user_center_orders(request,id):
+    rder = OrderInfo.objects.get(pk=id)
+    rder.oIsPay = True
+    rder.save()
+    a='9988'
+    return redirect('/urls/user_center_order/',{'a':a})

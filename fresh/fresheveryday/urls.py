@@ -15,5 +15,6 @@ urlpatterns = [
     url(r'^pic_handle2/$', views.pic_handle2),
     url(r'^loginout/$',views.loginout),
     url(r'^register1/$',views.register1),
+    url(r'^user_center_orders(\d+)/$',views.user_center_orders),
 
 ]
