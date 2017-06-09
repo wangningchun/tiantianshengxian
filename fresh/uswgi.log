@@ -1,0 +1,1432 @@
+*** Starting uWSGI 2.0.14 (64bit) on [Fri Jun  9 10:09:53 2017] ***
+compiled with version: 5.4.0 20160609 on 09 June 2017 09:59:58
+os: Linux-4.4.0-79-generic #100-Ubuntu SMP Wed May 17 19:58:14 UTC 2017
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /home/python/Desktop/tiantianshengxian/fresh
+writing pidfile to uwsgi.pid
+detected binary path: /home/python/.virtualenvs/tiantian/bin/uwsgi
+chdir() to /home/python/Desktop/tiantianshengxian/fresh
+your processes number limit is 11811
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 127.0.0.1:8080 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:41062 (port auto-assigned) fd 3
+Python version: 2.7.12 (default, Nov 19 2016, 06:48:10)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x10ebe60
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 415360 bytes (405 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x10ebe60 pid: 4925 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 4925)
+spawned uWSGI worker 1 (pid: 4929, cores: 2)
+spawned uWSGI worker 2 (pid: 4930, cores: 2)
+spawned uWSGI worker 3 (pid: 4931, cores: 2)
+spawned uWSGI worker 4 (pid: 4932, cores: 2)
+spawned uWSGI http 1 (pid: 4933)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 4933)
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.14 (64bit) on [Fri Jun  9 10:13:02 2017] ***
+compiled with version: 5.4.0 20160609 on 09 June 2017 09:59:58
+os: Linux-4.4.0-79-generic #100-Ubuntu SMP Wed May 17 19:58:14 UTC 2017
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /home/python/Desktop/tiantianshengxian/fresh
+writing pidfile to uwsgi.pid
+detected binary path: /home/python/.virtualenvs/tiantian/bin/uwsgi
+chdir() to /home/python/Desktop/tiantianshengxian/fresh
+your processes number limit is 11811
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8080 fd 3
+Python version: 2.7.12 (default, Nov 19 2016, 06:48:10)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x224ad90
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 415360 bytes (405 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x224ad90 pid: 4978 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 4978)
+spawned uWSGI worker 1 (pid: 4981, cores: 2)
+spawned uWSGI worker 2 (pid: 4982, cores: 2)
+spawned uWSGI worker 3 (pid: 4983, cores: 2)
+spawned uWSGI worker 4 (pid: 4984, cores: 2)
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/core/handlers/wsgi.py", line 189, in __call__
+    response = self.get_response(request)
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 218, in get_response
+    response = self.handle_uncaught_exception(request, resolver, sys.exc_info())
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 264, in handle_uncaught_exception
+    if resolver.urlconf_module is None:
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "./fresh/urls.py", line 26, in <module>
+    url(r'^search/', include('haystack.urls')),
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/urls.py", line 7, in <module>
+    from haystack.views import SearchView
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/views.py", line 16, in <module>
+    class SearchView(object):
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/views.py", line 20, in SearchView
+    results = EmptySearchQuerySet()
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/query.py", line 29, in __init__
+    self._determine_backend()
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/query.py", line 62, in _determine_backend
+    self.query = connections[backend_alias].get_query()
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/utils/loading.py", line 108, in __getitem__
+    self.thread_local.connections[key] = load_backend(self.connections_info[key]['ENGINE'])(using=key)
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/utils/loading.py", line 59, in load_backend
+    return import_class(full_backend_path)
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/utils/loading.py", line 26, in import_class
+    module_itself = importlib.import_module(module_path)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named whoosh_cn_backend
+[pid: 4984|app: 0|req: 1/1] 127.0.0.1 () {42 vars in 803 bytes} [Fri Jun  9 10:30:52 2017] GET / => generated 0 bytes in 692 msecs (HTTP/1.1 500) 0 headers in 0 bytes (0 switches on core 1)
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/core/handlers/wsgi.py", line 189, in __call__
+    response = self.get_response(request)
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 218, in get_response
+    response = self.handle_uncaught_exception(request, resolver, sys.exc_info())
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 264, in handle_uncaught_exception
+    if resolver.urlconf_module is None:
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "./fresh/urls.py", line 26, in <module>
+    url(r'^search/', include('haystack.urls')),
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/urls.py", line 7, in <module>
+    from haystack.views import SearchView
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/views.py", line 16, in <module>
+    class SearchView(object):
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/views.py", line 20, in SearchView
+    results = EmptySearchQuerySet()
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/query.py", line 29, in __init__
+    self._determine_backend()
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/query.py", line 62, in _determine_backend
+    self.query = connections[backend_alias].get_query()
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/utils/loading.py", line 108, in __getitem__
+    self.thread_local.connections[key] = load_backend(self.connections_info[key]['ENGINE'])(using=key)
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/utils/loading.py", line 59, in load_backend
+    return import_class(full_backend_path)
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/utils/loading.py", line 26, in import_class
+    module_itself = importlib.import_module(module_path)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named whoosh_cn_backend
+[pid: 4984|app: 0|req: 2/2] 127.0.0.1 () {40 vars in 721 bytes} [Fri Jun  9 10:30:53 2017] GET /favicon.ico => generated 0 bytes in 40 msecs (HTTP/1.1 500) 0 headers in 0 bytes (0 switches on core 0)
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/core/handlers/wsgi.py", line 189, in __call__
+    response = self.get_response(request)
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 218, in get_response
+    response = self.handle_uncaught_exception(request, resolver, sys.exc_info())
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 264, in handle_uncaught_exception
+    if resolver.urlconf_module is None:
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "./fresh/urls.py", line 26, in <module>
+    url(r'^search/', include('haystack.urls')),
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/urls.py", line 7, in <module>
+    from haystack.views import SearchView
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/views.py", line 16, in <module>
+    class SearchView(object):
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/views.py", line 20, in SearchView
+    results = EmptySearchQuerySet()
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/query.py", line 29, in __init__
+    self._determine_backend()
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/query.py", line 62, in _determine_backend
+    self.query = connections[backend_alias].get_query()
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/utils/loading.py", line 108, in __getitem__
+    self.thread_local.connections[key] = load_backend(self.connections_info[key]['ENGINE'])(using=key)
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/utils/loading.py", line 59, in load_backend
+    return import_class(full_backend_path)
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/utils/loading.py", line 26, in import_class
+    module_itself = importlib.import_module(module_path)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named whoosh_cn_backend
+[pid: 4982|app: 0|req: 1/3] 127.0.0.1 () {42 vars in 803 bytes} [Fri Jun  9 10:32:53 2017] GET / => generated 0 bytes in 39 msecs (HTTP/1.1 500) 0 headers in 0 bytes (0 switches on core 1)
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/core/handlers/wsgi.py", line 189, in __call__
+    response = self.get_response(request)
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 218, in get_response
+    response = self.handle_uncaught_exception(request, resolver, sys.exc_info())
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 264, in handle_uncaught_exception
+    if resolver.urlconf_module is None:
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "./fresh/urls.py", line 26, in <module>
+    url(r'^search/', include('haystack.urls')),
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/urls.py", line 7, in <module>
+    from haystack.views import SearchView
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/views.py", line 16, in <module>
+    class SearchView(object):
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/views.py", line 20, in SearchView
+    results = EmptySearchQuerySet()
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/query.py", line 29, in __init__
+    self._determine_backend()
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/query.py", line 62, in _determine_backend
+    self.query = connections[backend_alias].get_query()
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/utils/loading.py", line 108, in __getitem__
+    self.thread_local.connections[key] = load_backend(self.connections_info[key]['ENGINE'])(using=key)
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/utils/loading.py", line 59, in load_backend
+    return import_class(full_backend_path)
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/utils/loading.py", line 26, in import_class
+    module_itself = importlib.import_module(module_path)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named whoosh_cn_backend
+[pid: 4982|app: 0|req: 2/4] 127.0.0.1 () {40 vars in 721 bytes} [Fri Jun  9 10:32:53 2017] GET /favicon.ico => generated 0 bytes in 6 msecs (HTTP/1.1 500) 0 headers in 0 bytes (0 switches on core 0)
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/core/handlers/wsgi.py", line 189, in __call__
+    response = self.get_response(request)
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 218, in get_response
+    response = self.handle_uncaught_exception(request, resolver, sys.exc_info())
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 264, in handle_uncaught_exception
+    if resolver.urlconf_module is None:
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "./fresh/urls.py", line 26, in <module>
+    url(r'^search/', include('haystack.urls')),
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/urls.py", line 7, in <module>
+    from haystack.views import SearchView
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/views.py", line 16, in <module>
+    class SearchView(object):
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/views.py", line 20, in SearchView
+    results = EmptySearchQuerySet()
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/query.py", line 29, in __init__
+    self._determine_backend()
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/query.py", line 62, in _determine_backend
+    self.query = connections[backend_alias].get_query()
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/utils/loading.py", line 108, in __getitem__
+    self.thread_local.connections[key] = load_backend(self.connections_info[key]['ENGINE'])(using=key)
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/utils/loading.py", line 59, in load_backend
+    return import_class(full_backend_path)
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/utils/loading.py", line 26, in import_class
+    module_itself = importlib.import_module(module_path)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named whoosh_cn_backend
+[pid: 4983|app: 0|req: 1/5] 127.0.0.1 () {42 vars in 803 bytes} [Fri Jun  9 10:32:56 2017] GET / => generated 0 bytes in 45 msecs (HTTP/1.1 500) 0 headers in 0 bytes (0 switches on core 0)
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/core/handlers/wsgi.py", line 189, in __call__
+    response = self.get_response(request)
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 218, in get_response
+    response = self.handle_uncaught_exception(request, resolver, sys.exc_info())
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 264, in handle_uncaught_exception
+    if resolver.urlconf_module is None:
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "./fresh/urls.py", line 26, in <module>
+    url(r'^search/', include('haystack.urls')),
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/urls.py", line 7, in <module>
+    from haystack.views import SearchView
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/views.py", line 16, in <module>
+    class SearchView(object):
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/views.py", line 20, in SearchView
+    results = EmptySearchQuerySet()
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/query.py", line 29, in __init__
+    self._determine_backend()
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/query.py", line 62, in _determine_backend
+    self.query = connections[backend_alias].get_query()
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/utils/loading.py", line 108, in __getitem__
+    self.thread_local.connections[key] = load_backend(self.connections_info[key]['ENGINE'])(using=key)
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/utils/loading.py", line 59, in load_backend
+    return import_class(full_backend_path)
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/utils/loading.py", line 26, in import_class
+    module_itself = importlib.import_module(module_path)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named whoosh_cn_backend
+[pid: 4983|app: 0|req: 2/6] 127.0.0.1 () {40 vars in 721 bytes} [Fri Jun  9 10:32:56 2017] GET /favicon.ico => generated 0 bytes in 7 msecs (HTTP/1.1 500) 0 headers in 0 bytes (0 switches on core 1)
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/core/handlers/wsgi.py", line 189, in __call__
+    response = self.get_response(request)
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 218, in get_response
+    response = self.handle_uncaught_exception(request, resolver, sys.exc_info())
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 264, in handle_uncaught_exception
+    if resolver.urlconf_module is None:
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "./fresh/urls.py", line 26, in <module>
+    url(r'^search/', include('haystack.urls')),
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/urls.py", line 7, in <module>
+    from haystack.views import SearchView
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/views.py", line 16, in <module>
+    class SearchView(object):
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/views.py", line 20, in SearchView
+    results = EmptySearchQuerySet()
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/query.py", line 29, in __init__
+    self._determine_backend()
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/query.py", line 62, in _determine_backend
+    self.query = connections[backend_alias].get_query()
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/utils/loading.py", line 108, in __getitem__
+    self.thread_local.connections[key] = load_backend(self.connections_info[key]['ENGINE'])(using=key)
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/utils/loading.py", line 59, in load_backend
+    return import_class(full_backend_path)
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/utils/loading.py", line 26, in import_class
+    module_itself = importlib.import_module(module_path)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named whoosh_cn_backend
+[pid: 4981|app: 0|req: 1/7] 127.0.0.1 () {42 vars in 803 bytes} [Fri Jun  9 10:32:58 2017] GET / => generated 0 bytes in 44 msecs (HTTP/1.1 500) 0 headers in 0 bytes (0 switches on core 0)
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/core/handlers/wsgi.py", line 189, in __call__
+    response = self.get_response(request)
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 218, in get_response
+    response = self.handle_uncaught_exception(request, resolver, sys.exc_info())
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 264, in handle_uncaught_exception
+    if resolver.urlconf_module is None:
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "./fresh/urls.py", line 26, in <module>
+    url(r'^search/', include('haystack.urls')),
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/urls.py", line 7, in <module>
+    from haystack.views import SearchView
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/views.py", line 16, in <module>
+    class SearchView(object):
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/views.py", line 20, in SearchView
+    results = EmptySearchQuerySet()
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/query.py", line 29, in __init__
+    self._determine_backend()
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/query.py", line 62, in _determine_backend
+    self.query = connections[backend_alias].get_query()
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/utils/loading.py", line 108, in __getitem__
+    self.thread_local.connections[key] = load_backend(self.connections_info[key]['ENGINE'])(using=key)
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/utils/loading.py", line 59, in load_backend
+    return import_class(full_backend_path)
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/utils/loading.py", line 26, in import_class
+    module_itself = importlib.import_module(module_path)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named whoosh_cn_backend
+[pid: 4981|app: 0|req: 2/8] 127.0.0.1 () {40 vars in 721 bytes} [Fri Jun  9 10:32:58 2017] GET /favicon.ico => generated 0 bytes in 13 msecs (HTTP/1.1 500) 0 headers in 0 bytes (0 switches on core 1)
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/core/handlers/wsgi.py", line 189, in __call__
+    response = self.get_response(request)
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 218, in get_response
+    response = self.handle_uncaught_exception(request, resolver, sys.exc_info())
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 264, in handle_uncaught_exception
+    if resolver.urlconf_module is None:
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "./fresh/urls.py", line 26, in <module>
+    url(r'^search/', include('haystack.urls')),
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/urls.py", line 7, in <module>
+    from haystack.views import SearchView
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/views.py", line 16, in <module>
+    class SearchView(object):
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/views.py", line 20, in SearchView
+    results = EmptySearchQuerySet()
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/query.py", line 29, in __init__
+    self._determine_backend()
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/query.py", line 62, in _determine_backend
+    self.query = connections[backend_alias].get_query()
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/utils/loading.py", line 108, in __getitem__
+    self.thread_local.connections[key] = load_backend(self.connections_info[key]['ENGINE'])(using=key)
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/utils/loading.py", line 59, in load_backend
+    return import_class(full_backend_path)
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/utils/loading.py", line 26, in import_class
+    module_itself = importlib.import_module(module_path)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named whoosh_cn_backend
+[pid: 4984|app: 0|req: 3/9] 127.0.0.1 () {42 vars in 803 bytes} [Fri Jun  9 10:34:57 2017] GET / => generated 0 bytes in 7 msecs (HTTP/1.1 500) 0 headers in 0 bytes (0 switches on core 1)
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/core/handlers/wsgi.py", line 189, in __call__
+    response = self.get_response(request)
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 218, in get_response
+    response = self.handle_uncaught_exception(request, resolver, sys.exc_info())
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 264, in handle_uncaught_exception
+    if resolver.urlconf_module is None:
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "./fresh/urls.py", line 26, in <module>
+    url(r'^search/', include('haystack.urls')),
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/urls.py", line 7, in <module>
+    from haystack.views import SearchView
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/views.py", line 16, in <module>
+    class SearchView(object):
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/views.py", line 20, in SearchView
+    results = EmptySearchQuerySet()
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/query.py", line 29, in __init__
+    self._determine_backend()
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/query.py", line 62, in _determine_backend
+    self.query = connections[backend_alias].get_query()
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/utils/loading.py", line 108, in __getitem__
+    self.thread_local.connections[key] = load_backend(self.connections_info[key]['ENGINE'])(using=key)
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/utils/loading.py", line 59, in load_backend
+    return import_class(full_backend_path)
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/utils/loading.py", line 26, in import_class
+    module_itself = importlib.import_module(module_path)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named whoosh_cn_backend
+[pid: 4984|app: 0|req: 4/10] 127.0.0.1 () {40 vars in 721 bytes} [Fri Jun  9 10:34:57 2017] GET /favicon.ico => generated 0 bytes in 7 msecs (HTTP/1.1 500) 0 headers in 0 bytes (0 switches on core 0)
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/core/handlers/wsgi.py", line 189, in __call__
+    response = self.get_response(request)
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 218, in get_response
+    response = self.handle_uncaught_exception(request, resolver, sys.exc_info())
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 264, in handle_uncaught_exception
+    if resolver.urlconf_module is None:
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "./fresh/urls.py", line 26, in <module>
+    url(r'^search/', include('haystack.urls')),
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/urls.py", line 7, in <module>
+    from haystack.views import SearchView
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/views.py", line 16, in <module>
+    class SearchView(object):
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/views.py", line 20, in SearchView
+    results = EmptySearchQuerySet()
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/query.py", line 29, in __init__
+    self._determine_backend()
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/query.py", line 62, in _determine_backend
+    self.query = connections[backend_alias].get_query()
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/utils/loading.py", line 108, in __getitem__
+    self.thread_local.connections[key] = load_backend(self.connections_info[key]['ENGINE'])(using=key)
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/utils/loading.py", line 59, in load_backend
+    return import_class(full_backend_path)
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/utils/loading.py", line 26, in import_class
+    module_itself = importlib.import_module(module_path)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named whoosh_cn_backend
+[pid: 4984|app: 0|req: 5/11] 127.0.0.1 () {46 vars in 854 bytes} [Fri Jun  9 11:02:43 2017] GET / => generated 0 bytes in 14 msecs (HTTP/1.1 500) 0 headers in 0 bytes (0 switches on core 1)
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/core/handlers/wsgi.py", line 189, in __call__
+    response = self.get_response(request)
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 218, in get_response
+    response = self.handle_uncaught_exception(request, resolver, sys.exc_info())
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 264, in handle_uncaught_exception
+    if resolver.urlconf_module is None:
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "./fresh/urls.py", line 26, in <module>
+    url(r'^search/', include('haystack.urls')),
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/urls.py", line 7, in <module>
+    from haystack.views import SearchView
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/views.py", line 16, in <module>
+    class SearchView(object):
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/views.py", line 20, in SearchView
+    results = EmptySearchQuerySet()
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/query.py", line 29, in __init__
+    self._determine_backend()
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/query.py", line 62, in _determine_backend
+    self.query = connections[backend_alias].get_query()
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/utils/loading.py", line 108, in __getitem__
+    self.thread_local.connections[key] = load_backend(self.connections_info[key]['ENGINE'])(using=key)
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/utils/loading.py", line 59, in load_backend
+    return import_class(full_backend_path)
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/utils/loading.py", line 26, in import_class
+    module_itself = importlib.import_module(module_path)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named whoosh_cn_backend
+[pid: 4981|app: 0|req: 3/12] 127.0.0.1 () {42 vars in 763 bytes} [Fri Jun  9 11:02:45 2017] GET / => generated 0 bytes in 21 msecs (HTTP/1.1 500) 0 headers in 0 bytes (0 switches on core 0)
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.14 (64bit) on [Fri Jun  9 11:07:53 2017] ***
+compiled with version: 5.4.0 20160609 on 09 June 2017 09:59:58
+os: Linux-4.4.0-79-generic #100-Ubuntu SMP Wed May 17 19:58:14 UTC 2017
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /home/python/Desktop/tiantianshengxian/fresh
+writing pidfile to uwsgi.pid
+detected binary path: /home/python/.virtualenvs/tiantian/bin/uwsgi
+chdir() to /home/python/Desktop/tiantianshengxian/fresh
+your processes number limit is 11811
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8080 fd 3
+Python version: 2.7.12 (default, Nov 19 2016, 06:48:10)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x18c7d70
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 415360 bytes (405 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+failed to open python file tiantianshengxian/fresh/wsgi.py
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 9465)
+spawned uWSGI worker 1 (pid: 9466, cores: 2)
+spawned uWSGI worker 2 (pid: 9467, cores: 2)
+spawned uWSGI worker 3 (pid: 9468, cores: 2)
+spawned uWSGI worker 4 (pid: 9469, cores: 2)
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.14 (64bit) on [Fri Jun  9 11:11:23 2017] ***
+compiled with version: 5.4.0 20160609 on 09 June 2017 09:59:58
+os: Linux-4.4.0-79-generic #100-Ubuntu SMP Wed May 17 19:58:14 UTC 2017
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /home/python/Desktop/tiantianshengxian/fresh
+writing pidfile to uwsgi.pid
+detected binary path: /home/python/.virtualenvs/tiantian/bin/uwsgi
+chdir() to /home/python/Desktop/tiantianshengxian/fresh
+your processes number limit is 11811
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8080 fd 3
+Python version: 2.7.12 (default, Nov 19 2016, 06:48:10)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0xf29d70
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 415360 bytes (405 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0xf29d70 pid: 9571 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 9571)
+spawned uWSGI worker 1 (pid: 9574, cores: 2)
+spawned uWSGI worker 2 (pid: 9575, cores: 2)
+spawned uWSGI worker 3 (pid: 9576, cores: 2)
+spawned uWSGI worker 4 (pid: 9577, cores: 2)
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.14 (64bit) on [Fri Jun  9 11:14:14 2017] ***
+compiled with version: 5.4.0 20160609 on 09 June 2017 09:59:58
+os: Linux-4.4.0-79-generic #100-Ubuntu SMP Wed May 17 19:58:14 UTC 2017
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /home/python/Desktop/tiantianshengxian/fresh
+writing pidfile to uwsgi.pid
+detected binary path: /home/python/.virtualenvs/tiantian/bin/uwsgi
+chdir() to /home/python/Desktop/tiantianshengxian/fresh
+your processes number limit is 11811
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 127.0.0.1:8080 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:35597 (port auto-assigned) fd 3
+Python version: 2.7.12 (default, Nov 19 2016, 06:48:10)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x1635a60
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 415360 bytes (405 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1635a60 pid: 9673 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 9673)
+spawned uWSGI worker 1 (pid: 9676, cores: 2)
+spawned uWSGI worker 2 (pid: 9677, cores: 2)
+spawned uWSGI worker 3 (pid: 9678, cores: 2)
+spawned uWSGI worker 4 (pid: 9679, cores: 2)
+spawned uWSGI http 1 (pid: 9680)
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/core/handlers/wsgi.py", line 189, in __call__
+    response = self.get_response(request)
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 218, in get_response
+    response = self.handle_uncaught_exception(request, resolver, sys.exc_info())
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 264, in handle_uncaught_exception
+    if resolver.urlconf_module is None:
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "./fresh/urls.py", line 26, in <module>
+    url(r'^search/', include('haystack.urls')),
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/urls.py", line 7, in <module>
+    from haystack.views import SearchView
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/views.py", line 16, in <module>
+    class SearchView(object):
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/views.py", line 20, in SearchView
+    results = EmptySearchQuerySet()
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/query.py", line 29, in __init__
+    self._determine_backend()
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/query.py", line 62, in _determine_backend
+    self.query = connections[backend_alias].get_query()
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/utils/loading.py", line 108, in __getitem__
+    self.thread_local.connections[key] = load_backend(self.connections_info[key]['ENGINE'])(using=key)
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/utils/loading.py", line 59, in load_backend
+    return import_class(full_backend_path)
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/utils/loading.py", line 26, in import_class
+    module_itself = importlib.import_module(module_path)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named whoosh_cn_backend
+[pid: 9679|app: 0|req: 1/1] 127.0.0.1 () {40 vars in 729 bytes} [Fri Jun  9 11:14:18 2017] GET / => generated 0 bytes in 41 msecs (HTTP/1.1 500) 0 headers in 0 bytes (0 switches on core 0)
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/core/handlers/wsgi.py", line 189, in __call__
+    response = self.get_response(request)
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 218, in get_response
+    response = self.handle_uncaught_exception(request, resolver, sys.exc_info())
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 264, in handle_uncaught_exception
+    if resolver.urlconf_module is None:
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "./fresh/urls.py", line 26, in <module>
+    url(r'^search/', include('haystack.urls')),
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/urls.py", line 7, in <module>
+    from haystack.views import SearchView
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/views.py", line 16, in <module>
+    class SearchView(object):
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/views.py", line 20, in SearchView
+    results = EmptySearchQuerySet()
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/query.py", line 29, in __init__
+    self._determine_backend()
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/query.py", line 62, in _determine_backend
+    self.query = connections[backend_alias].get_query()
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/utils/loading.py", line 108, in __getitem__
+    self.thread_local.connections[key] = load_backend(self.connections_info[key]['ENGINE'])(using=key)
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/utils/loading.py", line 59, in load_backend
+    return import_class(full_backend_path)
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/utils/loading.py", line 26, in import_class
+    module_itself = importlib.import_module(module_path)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named whoosh_cn_backend
+[pid: 9677|app: 0|req: 1/2] 127.0.0.1 () {40 vars in 729 bytes} [Fri Jun  9 11:14:18 2017] GET / => generated 0 bytes in 34 msecs (HTTP/1.1 500) 0 headers in 0 bytes (0 switches on core 0)
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/core/handlers/wsgi.py", line 189, in __call__
+    response = self.get_response(request)
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 218, in get_response
+    response = self.handle_uncaught_exception(request, resolver, sys.exc_info())
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 264, in handle_uncaught_exception
+    if resolver.urlconf_module is None:
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "./fresh/urls.py", line 26, in <module>
+    url(r'^search/', include('haystack.urls')),
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/urls.py", line 7, in <module>
+    from haystack.views import SearchView
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/views.py", line 16, in <module>
+    class SearchView(object):
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/views.py", line 20, in SearchView
+    results = EmptySearchQuerySet()
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/query.py", line 29, in __init__
+    self._determine_backend()
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/query.py", line 62, in _determine_backend
+    self.query = connections[backend_alias].get_query()
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/utils/loading.py", line 108, in __getitem__
+    self.thread_local.connections[key] = load_backend(self.connections_info[key]['ENGINE'])(using=key)
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/utils/loading.py", line 59, in load_backend
+    return import_class(full_backend_path)
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/utils/loading.py", line 26, in import_class
+    module_itself = importlib.import_module(module_path)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named whoosh_cn_backend
+[pid: 9677|app: 0|req: 2/3] 127.0.0.1 () {40 vars in 730 bytes} [Fri Jun  9 11:14:18 2017] GET / => generated 0 bytes in 5 msecs (HTTP/1.1 500) 0 headers in 0 bytes (0 switches on core 1)
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/core/handlers/wsgi.py", line 189, in __call__
+    response = self.get_response(request)
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 218, in get_response
+    response = self.handle_uncaught_exception(request, resolver, sys.exc_info())
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 264, in handle_uncaught_exception
+    if resolver.urlconf_module is None:
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "./fresh/urls.py", line 26, in <module>
+    url(r'^search/', include('haystack.urls')),
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/urls.py", line 7, in <module>
+    from haystack.views import SearchView
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/views.py", line 16, in <module>
+    class SearchView(object):
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/views.py", line 20, in SearchView
+    results = EmptySearchQuerySet()
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/query.py", line 29, in __init__
+    self._determine_backend()
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/query.py", line 62, in _determine_backend
+    self.query = connections[backend_alias].get_query()
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/utils/loading.py", line 108, in __getitem__
+    self.thread_local.connections[key] = load_backend(self.connections_info[key]['ENGINE'])(using=key)
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/utils/loading.py", line 59, in load_backend
+    return import_class(full_backend_path)
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/utils/loading.py", line 26, in import_class
+    module_itself = importlib.import_module(module_path)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named whoosh_cn_backend
+[pid: 9679|app: 0|req: 2/4] 127.0.0.1 () {40 vars in 730 bytes} [Fri Jun  9 11:15:07 2017] GET / => generated 0 bytes in 17 msecs (HTTP/1.1 500) 0 headers in 0 bytes (0 switches on core 1)
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/core/handlers/wsgi.py", line 189, in __call__
+    response = self.get_response(request)
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 218, in get_response
+    response = self.handle_uncaught_exception(request, resolver, sys.exc_info())
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 264, in handle_uncaught_exception
+    if resolver.urlconf_module is None:
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "./fresh/urls.py", line 26, in <module>
+    url(r'^search/', include('haystack.urls')),
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/urls.py", line 7, in <module>
+    from haystack.views import SearchView
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/views.py", line 16, in <module>
+    class SearchView(object):
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/views.py", line 20, in SearchView
+    results = EmptySearchQuerySet()
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/query.py", line 29, in __init__
+    self._determine_backend()
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/query.py", line 62, in _determine_backend
+    self.query = connections[backend_alias].get_query()
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/utils/loading.py", line 108, in __getitem__
+    self.thread_local.connections[key] = load_backend(self.connections_info[key]['ENGINE'])(using=key)
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/utils/loading.py", line 59, in load_backend
+    return import_class(full_backend_path)
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/utils/loading.py", line 26, in import_class
+    module_itself = importlib.import_module(module_path)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named whoosh_cn_backend
+[pid: 9679|app: 0|req: 3/5] 127.0.0.1 () {40 vars in 730 bytes} [Fri Jun  9 11:15:07 2017] GET / => generated 0 bytes in 8 msecs (HTTP/1.1 500) 0 headers in 0 bytes (0 switches on core 0)
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/core/handlers/wsgi.py", line 189, in __call__
+    response = self.get_response(request)
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 218, in get_response
+    response = self.handle_uncaught_exception(request, resolver, sys.exc_info())
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 264, in handle_uncaught_exception
+    if resolver.urlconf_module is None:
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "./fresh/urls.py", line 26, in <module>
+    url(r'^search/', include('haystack.urls')),
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/urls.py", line 7, in <module>
+    from haystack.views import SearchView
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/views.py", line 16, in <module>
+    class SearchView(object):
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/views.py", line 20, in SearchView
+    results = EmptySearchQuerySet()
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/query.py", line 29, in __init__
+    self._determine_backend()
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/query.py", line 62, in _determine_backend
+    self.query = connections[backend_alias].get_query()
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/utils/loading.py", line 108, in __getitem__
+    self.thread_local.connections[key] = load_backend(self.connections_info[key]['ENGINE'])(using=key)
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/utils/loading.py", line 59, in load_backend
+    return import_class(full_backend_path)
+  File "/home/python/.virtualenvs/tiantian/local/lib/python2.7/site-packages/haystack/utils/loading.py", line 26, in import_class
+    module_itself = importlib.import_module(module_path)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named whoosh_cn_backend
+[pid: 9676|app: 0|req: 1/6] 127.0.0.1 () {40 vars in 730 bytes} [Fri Jun  9 11:15:07 2017] GET / => generated 0 bytes in 36 msecs (HTTP/1.1 500) 0 headers in 0 bytes (0 switches on core 0)
+Fri Jun  9 11:18:02 2017 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Fri Jun  9 11:18:02 2017 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Fri Jun  9 11:18:02 2017 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Fri Jun  9 11:18:02 2017 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Fri Jun  9 11:18:02 2017 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Fri Jun  9 11:18:02 2017 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Fri Jun  9 11:18:02 2017 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Fri Jun  9 11:18:02 2017 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.14 (64bit) on [Fri Jun  9 11:20:53 2017] ***
+compiled with version: 5.4.0 20160609 on 21 March 2017 10:49:30
+os: Linux-4.4.0-79-generic #100-Ubuntu SMP Wed May 17 19:58:14 UTC 2017
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /home/python/Desktop/tiantianshengxian/fresh
+writing pidfile to uwsgi.pid
+detected binary path: /home/python/.virtualenvs/py_django/bin/uwsgi
+chdir() to /home/python/Desktop/tiantianshengxian/fresh
+your processes number limit is 11811
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 127.0.0.1:8080 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:42799 (port auto-assigned) fd 3
+Python version: 2.7.12 (default, Nov 19 2016, 06:48:10)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x1834a70
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 415360 bytes (405 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+failed to open python file tiantianshengxian/fresh/wsgi.py
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 10129)
+spawned uWSGI worker 1 (pid: 10130, cores: 2)
+spawned uWSGI worker 2 (pid: 10131, cores: 2)
+spawned uWSGI worker 3 (pid: 10132, cores: 2)
+spawned uWSGI worker 4 (pid: 10133, cores: 2)
+spawned uWSGI http 1 (pid: 10134)
+--- no python application found, check your startup logs for errors ---
+[pid: 10131|app: -1|req: -1/1] 127.0.0.1 () {40 vars in 730 bytes} [Fri Jun  9 11:21:16 2017] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 10131|app: -1|req: -1/2] 127.0.0.1 () {38 vars in 653 bytes} [Fri Jun  9 11:21:16 2017] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 10131|app: -1|req: -1/3] 127.0.0.1 () {40 vars in 730 bytes} [Fri Jun  9 11:21:41 2017] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 10131|app: -1|req: -1/4] 127.0.0.1 () {38 vars in 653 bytes} [Fri Jun  9 11:21:41 2017] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 10134)
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.14 (64bit) on [Fri Jun  9 11:45:10 2017] ***
+compiled with version: 5.4.0 20160609 on 21 March 2017 10:49:30
+os: Linux-4.4.0-79-generic #100-Ubuntu SMP Wed May 17 19:58:14 UTC 2017
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /home/python/Desktop/tiantianshengxian/fresh
+writing pidfile to uwsgi.pid
+detected binary path: /home/python/.virtualenvs/py_django/bin/uwsgi
+chdir() to /home/python/Desktop/tiantianshengxian/fresh
+your processes number limit is 11811
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 127.0.0.1:8080 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:40264 (port auto-assigned) fd 3
+Python version: 2.7.12 (default, Nov 19 2016, 06:48:10)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x17e1a70
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 415360 bytes (405 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x17e1a70 pid: 10454 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 10454)
+spawned uWSGI worker 1 (pid: 10457, cores: 2)
+spawned uWSGI worker 2 (pid: 10458, cores: 2)
+spawned uWSGI worker 3 (pid: 10459, cores: 2)
+spawned uWSGI worker 4 (pid: 10460, cores: 2)
+spawned uWSGI http 1 (pid: 10462)
+[pid: 10457|app: 0|req: 1/1] 127.0.0.1 () {38 vars in 699 bytes} [Fri Jun  9 11:45:26 2017] GET / => generated 13328 bytes in 2759 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 10460|app: 0|req: 1/2] 127.0.0.1 () {38 vars in 699 bytes} [Fri Jun  9 11:45:27 2017] GET / => generated 13328 bytes in 2876 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 10457|app: 0|req: 2/3] 127.0.0.1 () {38 vars in 683 bytes} [Fri Jun  9 11:45:30 2017] GET /static/css/main.css => generated 2967 bytes in 13 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10460|app: 0|req: 2/4] 127.0.0.1 () {38 vars in 684 bytes} [Fri Jun  9 11:45:30 2017] GET /static/css/reset.css => generated 2970 bytes in 18 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10460|app: 0|req: 4/5] 127.0.0.1 () {38 vars in 705 bytes} [Fri Jun  9 11:45:30 2017] GET /static/images/slide03.jpg => generated 2985 bytes in 25 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10460|app: 0|req: 4/6] 127.0.0.1 () {38 vars in 705 bytes} [Fri Jun  9 11:45:30 2017] GET /static/images/slide02.jpg => generated 2985 bytes in 28 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10457|app: 0|req: 3/7] 127.0.0.1 () {38 vars in 701 bytes} [Fri Jun  9 11:45:30 2017] GET /static/images/adv01.jpg => generated 2979 bytes in 49 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10457|app: 0|req: 4/8] 127.0.0.1 () {38 vars in 708 bytes} [Fri Jun  9 11:45:30 2017] GET /static/images/banner01.jpg => generated 2988 bytes in 25 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10460|app: 0|req: 5/9] 127.0.0.1 () {38 vars in 724 bytes} [Fri Jun  9 11:45:30 2017] GET /static/goods/59251bebNea0fc46f.jpg => generated 3012 bytes in 16 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10460|app: 0|req: 6/10] 127.0.0.1 () {38 vars in 708 bytes} [Fri Jun  9 11:45:30 2017] GET /static/images/banner02.jpg => generated 2988 bytes in 23 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10457|app: 0|req: 5/11] 127.0.0.1 () {38 vars in 724 bytes} [Fri Jun  9 11:45:30 2017] GET /static/goods/577f85a7N39f40c35.jpg => generated 3012 bytes in 11 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10457|app: 0|req: 6/12] 127.0.0.1 () {38 vars in 708 bytes} [Fri Jun  9 11:45:30 2017] GET /static/images/banner03.jpg => generated 2988 bytes in 15 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10460|app: 0|req: 7/13] 127.0.0.1 () {38 vars in 724 bytes} [Fri Jun  9 11:45:30 2017] GET /static/goods/57e3aea6N5d8f4459.jpg => generated 3012 bytes in 11 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10460|app: 0|req: 8/14] 127.0.0.1 () {38 vars in 708 bytes} [Fri Jun  9 11:45:30 2017] GET /static/images/banner04.jpg => generated 2988 bytes in 12 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10457|app: 0|req: 7/15] 127.0.0.1 () {38 vars in 724 bytes} [Fri Jun  9 11:45:30 2017] GET /static/goods/57481b77Nbed0cff5.jpg => generated 3012 bytes in 22 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10460|app: 0|req: 9/16] 127.0.0.1 () {38 vars in 708 bytes} [Fri Jun  9 11:45:30 2017] GET /static/images/banner05.jpg => generated 2988 bytes in 24 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10460|app: 0|req: 11/17] 127.0.0.1 () {38 vars in 708 bytes} [Fri Jun  9 11:45:30 2017] GET /static/images/banner06.jpg => generated 2988 bytes in 26 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10460|app: 0|req: 12/19] 127.0.0.1 () {38 vars in 724 bytes} [Fri Jun  9 11:45:30 2017] GET /static/goods/5523aa83N67e99470.jpg => generated 3012 bytes in 26 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10460|app: 0|req: 12/19] 127.0.0.1 () {38 vars in 724 bytes} [Fri Jun  9 11:45:30 2017] GET /static/goods/57a9a823N2c38934e.jpg => generated 3012 bytes in 76 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10459|app: 0|req: 2/20] 127.0.0.1 () {38 vars in 699 bytes} [Fri Jun  9 11:45:30 2017] GET /static/images/logo.png => generated 2976 bytes in 3206 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10459|app: 0|req: 2/21] 127.0.0.1 () {38 vars in 701 bytes} [Fri Jun  9 11:45:30 2017] GET /static/images/slide.jpg => generated 2979 bytes in 3208 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10458|app: 0|req: 2/22] 127.0.0.1 () {38 vars in 705 bytes} [Fri Jun  9 11:45:30 2017] GET /static/images/slide04.jpg => generated 2985 bytes in 3288 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10458|app: 0|req: 2/23] 127.0.0.1 () {38 vars in 702 bytes} [Fri Jun  9 11:45:30 2017] GET /static/images/adv02.jpg => generated 2979 bytes in 3214 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10460|app: 0|req: 13/24] 127.0.0.1 () {38 vars in 653 bytes} [Fri Jun  9 11:45:33 2017] GET /favicon.ico => generated 2943 bytes in 12 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 10462)
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.14 (64bit) on [Fri Jun  9 11:53:02 2017] ***
+compiled with version: 5.4.0 20160609 on 21 March 2017 10:49:30
+os: Linux-4.4.0-79-generic #100-Ubuntu SMP Wed May 17 19:58:14 UTC 2017
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /home/python/Desktop/tiantianshengxian/fresh
+writing pidfile to uwsgi.pid
+detected binary path: /home/python/.virtualenvs/py_django/bin/uwsgi
+chdir() to /home/python/Desktop/tiantianshengxian/fresh
+your processes number limit is 11811
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8080 fd 3
+Python version: 2.7.12 (default, Nov 19 2016, 06:48:10)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x1fc5db0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 415360 bytes (405 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x1fc5db0 pid: 10526 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 10526)
+spawned uWSGI worker 1 (pid: 10529, cores: 2)
+spawned uWSGI worker 2 (pid: 10530, cores: 2)
+spawned uWSGI worker 3 (pid: 10531, cores: 2)
+spawned uWSGI worker 4 (pid: 10533, cores: 2)
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+[pid: 10531|app: 0|req: 1/1] 127.0.0.1 () {42 vars in 763 bytes} [Fri Jun  9 14:36:13 2017] GET / => generated 13328 bytes in 2456 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 10531|app: 0|req: 2/2] 127.0.0.1 () {42 vars in 745 bytes} [Fri Jun  9 14:36:16 2017] GET /static/css/reset.css => generated 94 bytes in 22 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10533|app: 0|req: 1/3] 127.0.0.1 () {42 vars in 743 bytes} [Fri Jun  9 14:36:16 2017] GET /static/css/main.css => generated 93 bytes in 2848 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10531|app: 0|req: 3/4] 127.0.0.1 () {42 vars in 765 bytes} [Fri Jun  9 14:36:19 2017] GET /static/images/slide02.jpg => generated 99 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10531|app: 0|req: 4/5] 127.0.0.1 () {42 vars in 765 bytes} [Fri Jun  9 14:36:19 2017] GET /static/images/slide03.jpg => generated 99 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10533|app: 0|req: 2/6] 127.0.0.1 () {42 vars in 761 bytes} [Fri Jun  9 14:36:19 2017] GET /static/images/slide.jpg => generated 97 bytes in 11 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10533|app: 0|req: 3/7] 127.0.0.1 () {42 vars in 761 bytes} [Fri Jun  9 14:36:19 2017] GET /static/images/adv02.jpg => generated 97 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10533|app: 0|req: 4/8] 127.0.0.1 () {42 vars in 767 bytes} [Fri Jun  9 14:36:19 2017] GET /static/images/banner01.jpg => generated 100 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10533|app: 0|req: 5/9] 127.0.0.1 () {42 vars in 783 bytes} [Fri Jun  9 14:36:19 2017] GET /static/goods/59251bebNea0fc46f.jpg => generated 108 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10531|app: 0|req: 5/10] 127.0.0.1 () {42 vars in 767 bytes} [Fri Jun  9 14:36:19 2017] GET /static/images/banner02.jpg => generated 100 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10533|app: 0|req: 6/11] 127.0.0.1 () {42 vars in 767 bytes} [Fri Jun  9 14:36:19 2017] GET /static/images/banner03.jpg => generated 100 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10531|app: 0|req: 7/12] 127.0.0.1 () {42 vars in 783 bytes} [Fri Jun  9 14:36:19 2017] GET /static/goods/57e3aea6N5d8f4459.jpg => generated 108 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10531|app: 0|req: 7/13] 127.0.0.1 () {42 vars in 767 bytes} [Fri Jun  9 14:36:19 2017] GET /static/images/banner04.jpg => generated 100 bytes in 7 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10533|app: 0|req: 7/14] 127.0.0.1 () {42 vars in 783 bytes} [Fri Jun  9 14:36:19 2017] GET /static/goods/57481b77Nbed0cff5.jpg => generated 108 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10531|app: 0|req: 8/15] 127.0.0.1 () {42 vars in 783 bytes} [Fri Jun  9 14:36:19 2017] GET /static/goods/57a9a823N2c38934e.jpg => generated 108 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10533|app: 0|req: 8/16] 127.0.0.1 () {42 vars in 767 bytes} [Fri Jun  9 14:36:19 2017] GET /static/images/banner05.jpg => generated 100 bytes in 8 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10533|app: 0|req: 9/17] 127.0.0.1 () {42 vars in 767 bytes} [Fri Jun  9 14:36:19 2017] GET /static/images/banner06.jpg => generated 100 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10533|app: 0|req: 10/18] 127.0.0.1 () {42 vars in 783 bytes} [Fri Jun  9 14:36:19 2017] GET /static/goods/5523aa83N67e99470.jpg => generated 108 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10529|app: 0|req: 2/19] 127.0.0.1 () {42 vars in 783 bytes} [Fri Jun  9 14:36:19 2017] GET /static/goods/577f85a7N39f40c35.jpg => generated 108 bytes in 84 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10529|app: 0|req: 2/20] 127.0.0.1 () {42 vars in 759 bytes} [Fri Jun  9 14:36:16 2017] GET /static/images/logo.png => generated 96 bytes in 3007 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10530|app: 0|req: 2/21] 127.0.0.1 () {42 vars in 761 bytes} [Fri Jun  9 14:36:19 2017] GET /static/images/adv01.jpg => generated 97 bytes in 2186 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10530|app: 0|req: 2/22] 127.0.0.1 () {42 vars in 765 bytes} [Fri Jun  9 14:36:19 2017] GET /static/images/slide04.jpg => generated 99 bytes in 2188 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10533|app: 0|req: 11/23] 127.0.0.1 () {42 vars in 763 bytes} [Fri Jun  9 14:46:04 2017] GET / => generated 13328 bytes in 214 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 10529|app: 0|req: 3/24] 127.0.0.1 () {42 vars in 763 bytes} [Fri Jun  9 14:52:58 2017] GET / => generated 13328 bytes in 190 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+[pid: 10533|app: 0|req: 12/25] 127.0.0.1 () {40 vars in 732 bytes} [Fri Jun  9 14:54:25 2017] GET / => generated 13328 bytes in 99 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 10531|app: 0|req: 9/26] 127.0.0.1 () {42 vars in 763 bytes} [Fri Jun  9 14:56:06 2017] GET / => generated 13328 bytes in 133 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 10530|app: 0|req: 3/27] 127.0.0.1 () {42 vars in 763 bytes} [Fri Jun  9 14:59:14 2017] GET / => generated 13328 bytes in 249 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 10531|app: 0|req: 10/28] 127.0.0.1 () {42 vars in 763 bytes} [Fri Jun  9 15:07:45 2017] GET / => generated 13328 bytes in 170 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 10531|app: 0|req: 11/29] 127.0.0.1 () {42 vars in 763 bytes} [Fri Jun  9 15:13:28 2017] GET / => generated 13328 bytes in 160 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 10531|app: 0|req: 12/30] 192.168.61.133 () {38 vars in 641 bytes} [Fri Jun  9 15:16:13 2017] GET / => generated 13329 bytes in 117 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 10531|app: 0|req: 13/31] 192.168.61.133 () {38 vars in 595 bytes} [Fri Jun  9 15:16:14 2017] GET /favicon.ico => generated 85 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10531|app: 0|req: 14/32] 192.168.61.133 () {40 vars in 701 bytes} [Fri Jun  9 15:23:39 2017] GET /urls/login/ => generated 2582 bytes in 29 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+[pid: 10531|app: 0|req: 15/33] 192.168.61.133 () {50 vars in 959 bytes} [Fri Jun  9 15:23:46 2017] POST /urls/pic_handle1/ => generated 0 bytes in 1372 msecs (HTTP/1.1 302) 7 headers in 428 bytes (1 switches on core 1)
+[pid: 10529|app: 0|req: 4/34] 192.168.61.133 () {44 vars in 822 bytes} [Fri Jun  9 15:23:48 2017] GET / => generated 13328 bytes in 124 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 10529|app: 0|req: 5/35] 192.168.61.133 () {42 vars in 824 bytes} [Fri Jun  9 15:23:54 2017] GET /urls/user_center_info/ => generated 3167 bytes in 118 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 10530|app: 0|req: 4/36] 192.168.61.133 () {42 vars in 848 bytes} [Fri Jun  9 15:23:56 2017] GET /urls/user_center_order/ => generated 7181 bytes in 648 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 10530|app: 0|req: 5/37] 192.168.61.1 () {38 vars in 643 bytes} [Fri Jun  9 15:26:08 2017] GET / => generated 13329 bytes in 94 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 10531|app: 0|req: 16/38] 192.168.61.1 () {38 vars in 622 bytes} [Fri Jun  9 15:26:09 2017] GET /favicon.ico => generated 85 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10529|app: 0|req: 6/39] 192.168.61.1 () {40 vars in 674 bytes} [Fri Jun  9 15:26:16 2017] GET / => generated 13329 bytes in 96 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 10531|app: 0|req: 17/40] 192.168.61.1 () {40 vars in 709 bytes} [Fri Jun  9 15:26:22 2017] GET /urls/register/ => generated 2593 bytes in 74 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+[pid: 10529|app: 0|req: 7/41] 192.168.61.1 () {42 vars in 826 bytes} [Fri Jun  9 15:29:43 2017] GET /register1/?uname=%E4%BB%8A%E5%A4%A9%E5%85%8D%E5%8D%95%E6%94%BE%E9%80%81 => generated 84 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10529|app: 0|req: 8/42] 192.168.61.1 () {42 vars in 826 bytes} [Fri Jun  9 15:29:45 2017] GET /register1/?uname=%E4%BB%8A%E5%A4%A9%E5%85%8D%E5%8D%95%E6%94%BE%E9%80%81 => generated 84 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10531|app: 0|req: 18/43] 192.168.61.1 () {42 vars in 826 bytes} [Fri Jun  9 15:30:08 2017] GET /register1/?uname=%E4%BB%8A%E5%A4%A9%E5%85%8D%E5%8D%95%E6%94%BE%E9%80%81 => generated 84 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10533|app: 0|req: 13/44] 192.168.61.1 () {42 vars in 826 bytes} [Fri Jun  9 15:30:09 2017] GET /register1/?uname=%E4%BB%8A%E5%A4%A9%E5%85%8D%E5%8D%95%E6%94%BE%E9%80%81 => generated 84 bytes in 6 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10533|app: 0|req: 14/45] 192.168.61.1 () {42 vars in 826 bytes} [Fri Jun  9 15:30:12 2017] GET /register1/?uname=%E4%BB%8A%E5%A4%A9%E5%85%8D%E5%8D%95%E6%94%BE%E9%80%81 => generated 84 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10530|app: 0|req: 6/46] 192.168.61.1 () {42 vars in 826 bytes} [Fri Jun  9 15:30:32 2017] GET /register1/?uname=%E4%BB%8A%E5%A4%A9%E5%85%8D%E5%8D%95%E6%94%BE%E9%80%81 => generated 84 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10530|app: 0|req: 7/47] 192.168.61.1 () {42 vars in 826 bytes} [Fri Jun  9 15:30:32 2017] GET /register1/?uname=%E4%BB%8A%E5%A4%A9%E5%85%8D%E5%8D%95%E6%94%BE%E9%80%81 => generated 84 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10529|app: 0|req: 9/48] 192.168.61.1 () {42 vars in 826 bytes} [Fri Jun  9 15:30:32 2017] GET /register1/?uname=%E4%BB%8A%E5%A4%A9%E5%85%8D%E5%8D%95%E6%94%BE%E9%80%81 => generated 84 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10529|app: 0|req: 10/49] 192.168.61.1 () {42 vars in 826 bytes} [Fri Jun  9 15:30:32 2017] GET /register1/?uname=%E4%BB%8A%E5%A4%A9%E5%85%8D%E5%8D%95%E6%94%BE%E9%80%81 => generated 84 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10531|app: 0|req: 19/50] 192.168.61.1 () {42 vars in 826 bytes} [Fri Jun  9 15:30:36 2017] GET /register1/?uname=%E4%BB%8A%E5%A4%A9%E5%85%8D%E5%8D%95%E6%94%BE%E9%80%81 => generated 84 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10529|app: 0|req: 11/51] 192.168.61.1 () {42 vars in 730 bytes} [Fri Jun  9 15:30:43 2017] GET /register1/?uname=qazxsw => generated 84 bytes in 20 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10529|app: 0|req: 12/52] 192.168.61.1 () {40 vars in 700 bytes} [Fri Jun  9 15:30:47 2017] GET / => generated 13329 bytes in 178 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 10531|app: 0|req: 20/53] 192.168.61.1 () {42 vars in 766 bytes} [Fri Jun  9 15:30:51 2017] GET /urls/register/ => generated 2593 bytes in 3 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+[pid: 10533|app: 0|req: 15/54] 192.168.61.1 () {42 vars in 730 bytes} [Fri Jun  9 15:31:02 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10530|app: 0|req: 8/55] 192.168.61.1 () {42 vars in 730 bytes} [Fri Jun  9 15:31:14 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10530|app: 0|req: 9/56] 192.168.61.1 () {42 vars in 730 bytes} [Fri Jun  9 15:31:15 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10533|app: 0|req: 16/57] 192.168.61.1 () {42 vars in 730 bytes} [Fri Jun  9 15:31:15 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10529|app: 0|req: 13/58] 192.168.61.1 () {42 vars in 730 bytes} [Fri Jun  9 15:31:15 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10531|app: 0|req: 21/59] 192.168.61.1 () {42 vars in 730 bytes} [Fri Jun  9 15:31:16 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10533|app: 0|req: 17/60] 192.168.61.1 () {42 vars in 730 bytes} [Fri Jun  9 15:31:16 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10533|app: 0|req: 18/61] 192.168.61.1 () {42 vars in 730 bytes} [Fri Jun  9 15:31:16 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10531|app: 0|req: 22/62] 192.168.61.1 () {42 vars in 730 bytes} [Fri Jun  9 15:31:19 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10530|app: 0|req: 10/63] 192.168.61.1 () {42 vars in 730 bytes} [Fri Jun  9 15:31:19 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10531|app: 0|req: 23/64] 192.168.61.1 () {42 vars in 730 bytes} [Fri Jun  9 15:31:19 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10533|app: 0|req: 19/65] 192.168.61.1 () {42 vars in 730 bytes} [Fri Jun  9 15:31:19 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10533|app: 0|req: 20/66] 192.168.61.1 () {42 vars in 730 bytes} [Fri Jun  9 15:31:19 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10529|app: 0|req: 14/67] 192.168.61.1 () {42 vars in 730 bytes} [Fri Jun  9 15:31:19 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10530|app: 0|req: 11/68] 192.168.61.1 () {42 vars in 730 bytes} [Fri Jun  9 15:31:20 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10530|app: 0|req: 12/69] 192.168.61.1 () {42 vars in 730 bytes} [Fri Jun  9 15:31:20 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10529|app: 0|req: 15/70] 192.168.61.1 () {42 vars in 730 bytes} [Fri Jun  9 15:31:20 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10531|app: 0|req: 24/71] 192.168.61.1 () {42 vars in 730 bytes} [Fri Jun  9 15:31:20 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10531|app: 0|req: 25/72] 192.168.61.1 () {42 vars in 730 bytes} [Fri Jun  9 15:31:20 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10530|app: 0|req: 13/73] 192.168.61.1 () {42 vars in 730 bytes} [Fri Jun  9 15:31:21 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10533|app: 0|req: 21/74] 192.168.61.1 () {42 vars in 730 bytes} [Fri Jun  9 15:31:21 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10533|app: 0|req: 22/75] 192.168.61.1 () {42 vars in 730 bytes} [Fri Jun  9 15:31:21 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10531|app: 0|req: 26/76] 192.168.61.1 () {42 vars in 730 bytes} [Fri Jun  9 15:31:21 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 13 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10531|app: 0|req: 27/77] 192.168.61.1 () {42 vars in 730 bytes} [Fri Jun  9 15:31:21 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10529|app: 0|req: 16/78] 192.168.61.1 () {42 vars in 730 bytes} [Fri Jun  9 15:31:23 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10529|app: 0|req: 17/79] 192.168.61.1 () {42 vars in 730 bytes} [Fri Jun  9 15:31:23 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10530|app: 0|req: 14/80] 192.168.61.1 () {42 vars in 730 bytes} [Fri Jun  9 15:31:24 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10530|app: 0|req: 15/81] 192.168.61.1 () {42 vars in 730 bytes} [Fri Jun  9 15:31:24 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 14 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10531|app: 0|req: 28/82] 192.168.61.1 () {42 vars in 730 bytes} [Fri Jun  9 15:31:24 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10531|app: 0|req: 29/83] 192.168.61.1 () {42 vars in 730 bytes} [Fri Jun  9 15:31:24 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10533|app: 0|req: 23/84] 192.168.61.133 () {42 vars in 831 bytes} [Fri Jun  9 15:31:28 2017] GET /urls/loginout/ => generated 0 bytes in 217 msecs (HTTP/1.1 302) 4 headers in 208 bytes (1 switches on core 1)
+[pid: 10531|app: 0|req: 30/85] 192.168.61.133 () {42 vars in 759 bytes} [Fri Jun  9 15:31:29 2017] GET / => generated 13329 bytes in 204 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 10529|app: 0|req: 18/86] 192.168.61.133 () {42 vars in 758 bytes} [Fri Jun  9 15:31:30 2017] GET /urls/login/ => generated 2582 bytes in 1 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+[pid: 10530|app: 0|req: 16/87] 192.168.61.133 () {42 vars in 775 bytes} [Fri Jun  9 15:31:31 2017] GET /urls/register/ => generated 2593 bytes in 1 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+[pid: 10531|app: 0|req: 31/88] 192.168.61.1 () {42 vars in 730 bytes} [Fri Jun  9 15:31:40 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10533|app: 0|req: 24/89] 192.168.61.1 () {42 vars in 730 bytes} [Fri Jun  9 15:31:40 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10529|app: 0|req: 19/90] 192.168.61.1 () {42 vars in 730 bytes} [Fri Jun  9 15:31:41 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10529|app: 0|req: 20/91] 192.168.61.1 () {42 vars in 730 bytes} [Fri Jun  9 15:31:41 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10533|app: 0|req: 25/92] 192.168.61.1 () {42 vars in 730 bytes} [Fri Jun  9 15:31:41 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10530|app: 0|req: 17/93] 192.168.61.1 () {42 vars in 730 bytes} [Fri Jun  9 15:31:41 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10533|app: 0|req: 26/94] 192.168.61.1 () {42 vars in 730 bytes} [Fri Jun  9 15:31:41 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10533|app: 0|req: 27/95] 192.168.61.1 () {42 vars in 730 bytes} [Fri Jun  9 15:31:41 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10531|app: 0|req: 32/96] 192.168.61.1 () {42 vars in 730 bytes} [Fri Jun  9 15:31:42 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10531|app: 0|req: 33/97] 192.168.61.1 () {42 vars in 730 bytes} [Fri Jun  9 15:31:42 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10529|app: 0|req: 21/98] 192.168.61.1 () {42 vars in 730 bytes} [Fri Jun  9 15:31:42 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10529|app: 0|req: 22/99] 192.168.61.1 () {42 vars in 730 bytes} [Fri Jun  9 15:31:42 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10533|app: 0|req: 28/100] 192.168.61.1 () {42 vars in 730 bytes} [Fri Jun  9 15:31:42 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10530|app: 0|req: 18/101] 192.168.61.1 () {42 vars in 730 bytes} [Fri Jun  9 15:31:43 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10531|app: 0|req: 34/102] 192.168.61.1 () {42 vars in 730 bytes} [Fri Jun  9 15:31:43 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10530|app: 0|req: 19/103] 192.168.61.1 () {42 vars in 730 bytes} [Fri Jun  9 15:31:43 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10530|app: 0|req: 20/104] 192.168.61.1 () {42 vars in 730 bytes} [Fri Jun  9 15:31:43 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10529|app: 0|req: 23/105] 192.168.61.1 () {42 vars in 730 bytes} [Fri Jun  9 15:31:43 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10529|app: 0|req: 24/106] 192.168.61.1 () {42 vars in 730 bytes} [Fri Jun  9 15:31:43 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10530|app: 0|req: 21/107] 192.168.61.1 () {42 vars in 730 bytes} [Fri Jun  9 15:31:44 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10531|app: 0|req: 35/108] 192.168.61.1 () {42 vars in 730 bytes} [Fri Jun  9 15:31:44 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10533|app: 0|req: 29/109] 192.168.61.1 () {42 vars in 730 bytes} [Fri Jun  9 15:31:44 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10531|app: 0|req: 36/110] 192.168.61.1 () {42 vars in 730 bytes} [Fri Jun  9 15:31:44 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10533|app: 0|req: 30/111] 192.168.61.1 () {42 vars in 730 bytes} [Fri Jun  9 15:31:44 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10531|app: 0|req: 37/112] 192.168.61.133 () {42 vars in 728 bytes} [Fri Jun  9 15:31:57 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10530|app: 0|req: 22/113] 192.168.61.133 () {42 vars in 728 bytes} [Fri Jun  9 15:32:10 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10529|app: 0|req: 25/114] 192.168.61.133 () {42 vars in 728 bytes} [Fri Jun  9 15:32:14 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10529|app: 0|req: 26/115] 192.168.61.133 () {42 vars in 728 bytes} [Fri Jun  9 15:32:14 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10533|app: 0|req: 31/116] 192.168.61.133 () {42 vars in 728 bytes} [Fri Jun  9 15:32:15 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10530|app: 0|req: 23/117] 192.168.61.133 () {42 vars in 728 bytes} [Fri Jun  9 15:32:15 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10531|app: 0|req: 38/118] 192.168.61.133 () {42 vars in 728 bytes} [Fri Jun  9 15:32:15 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10531|app: 0|req: 39/119] 192.168.61.133 () {42 vars in 728 bytes} [Fri Jun  9 15:32:15 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10531|app: 0|req: 40/120] 192.168.61.133 () {42 vars in 728 bytes} [Fri Jun  9 15:32:15 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10533|app: 0|req: 32/121] 192.168.61.133 () {42 vars in 728 bytes} [Fri Jun  9 15:32:15 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10533|app: 0|req: 33/122] 192.168.61.133 () {42 vars in 728 bytes} [Fri Jun  9 15:32:16 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10533|app: 0|req: 34/123] 192.168.61.133 () {42 vars in 728 bytes} [Fri Jun  9 15:32:16 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10529|app: 0|req: 27/124] 192.168.61.133 () {42 vars in 728 bytes} [Fri Jun  9 15:32:16 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10529|app: 0|req: 28/125] 192.168.61.133 () {42 vars in 728 bytes} [Fri Jun  9 15:32:16 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10533|app: 0|req: 35/126] 192.168.61.133 () {42 vars in 728 bytes} [Fri Jun  9 15:32:16 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10530|app: 0|req: 24/127] 192.168.61.133 () {42 vars in 728 bytes} [Fri Jun  9 15:32:17 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10530|app: 0|req: 25/128] 192.168.61.133 () {42 vars in 728 bytes} [Fri Jun  9 15:32:17 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10531|app: 0|req: 41/129] 192.168.61.133 () {42 vars in 728 bytes} [Fri Jun  9 15:32:17 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10531|app: 0|req: 42/130] 192.168.61.133 () {42 vars in 728 bytes} [Fri Jun  9 15:32:17 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10533|app: 0|req: 36/131] 192.168.61.133 () {42 vars in 728 bytes} [Fri Jun  9 15:32:17 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10529|app: 0|req: 29/132] 192.168.61.133 () {42 vars in 728 bytes} [Fri Jun  9 15:32:17 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10529|app: 0|req: 30/133] 192.168.61.133 () {42 vars in 728 bytes} [Fri Jun  9 15:32:18 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10533|app: 0|req: 37/134] 192.168.61.133 () {42 vars in 728 bytes} [Fri Jun  9 15:32:18 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10531|app: 0|req: 43/135] 192.168.61.133 () {42 vars in 728 bytes} [Fri Jun  9 15:32:18 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10531|app: 0|req: 44/136] 192.168.61.133 () {42 vars in 728 bytes} [Fri Jun  9 15:32:18 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10530|app: 0|req: 26/137] 192.168.61.133 () {42 vars in 772 bytes} [Fri Jun  9 15:32:19 2017] GET /urls/login/ => generated 2582 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+[pid: 10530|app: 0|req: 27/138] 192.168.61.133 () {50 vars in 957 bytes} [Fri Jun  9 15:33:32 2017] POST /urls/pic_handle1/ => generated 2584 bytes in 51 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+[pid: 10530|app: 0|req: 28/139] 192.168.61.133 () {42 vars in 781 bytes} [Fri Jun  9 15:33:33 2017] GET /urls/register/ => generated 2593 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+[pid: 10533|app: 0|req: 38/140] 192.168.61.133 () {42 vars in 728 bytes} [Fri Jun  9 15:33:41 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10529|app: 0|req: 31/141] 192.168.61.133 () {42 vars in 728 bytes} [Fri Jun  9 15:33:50 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10529|app: 0|req: 32/142] 192.168.61.133 () {42 vars in 728 bytes} [Fri Jun  9 15:33:51 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10531|app: 0|req: 45/143] 192.168.61.133 () {42 vars in 728 bytes} [Fri Jun  9 15:33:51 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10529|app: 0|req: 33/144] 192.168.61.133 () {42 vars in 728 bytes} [Fri Jun  9 15:33:51 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10529|app: 0|req: 34/145] 192.168.61.133 () {42 vars in 728 bytes} [Fri Jun  9 15:33:51 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10530|app: 0|req: 29/146] 192.168.61.133 () {42 vars in 728 bytes} [Fri Jun  9 15:33:52 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10531|app: 0|req: 46/147] 192.168.61.133 () {42 vars in 728 bytes} [Fri Jun  9 15:33:52 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10533|app: 0|req: 39/148] 192.168.61.133 () {42 vars in 732 bytes} [Fri Jun  9 15:33:57 2017] GET /register1/?uname=qqqazwsx => generated 84 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10533|app: 0|req: 40/149] 192.168.61.133 () {42 vars in 732 bytes} [Fri Jun  9 15:34:01 2017] GET /register1/?uname=qqqazwsx => generated 84 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10531|app: 0|req: 47/150] 192.168.61.133 () {42 vars in 736 bytes} [Fri Jun  9 15:34:12 2017] GET /register1/?uname=0000000000 => generated 84 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10530|app: 0|req: 30/151] 192.168.61.133 () {42 vars in 736 bytes} [Fri Jun  9 15:34:13 2017] GET /register1/?uname=0000000000 => generated 84 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10533|app: 0|req: 41/152] 192.168.61.133 () {42 vars in 736 bytes} [Fri Jun  9 15:34:16 2017] GET /register1/?uname=0000000000 => generated 84 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10533|app: 0|req: 42/153] 192.168.61.133 () {42 vars in 736 bytes} [Fri Jun  9 15:34:18 2017] GET /register1/?uname=0000000000 => generated 84 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10529|app: 0|req: 35/154] 192.168.61.133 () {42 vars in 736 bytes} [Fri Jun  9 15:34:18 2017] GET /register1/?uname=0000000000 => generated 84 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10529|app: 0|req: 36/155] 192.168.61.133 () {42 vars in 736 bytes} [Fri Jun  9 15:34:18 2017] GET /register1/?uname=0000000000 => generated 84 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10531|app: 0|req: 48/156] 192.168.61.133 () {40 vars in 751 bytes} [Fri Jun  9 15:34:54 2017] GET /register1/?uname=0000000000 => generated 84 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10531|app: 0|req: 49/157] 192.168.61.133 () {40 vars in 743 bytes} [Fri Jun  9 15:34:58 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10529|app: 0|req: 37/158] 192.168.61.133 () {40 vars in 747 bytes} [Fri Jun  9 15:35:01 2017] GET /register1/?uname=qqqazwsx => generated 84 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10530|app: 0|req: 31/159] 192.168.61.133 () {42 vars in 736 bytes} [Fri Jun  9 15:35:21 2017] GET /register1/?uname=0000000000 => generated 84 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10533|app: 0|req: 43/160] 192.168.61.133 () {42 vars in 736 bytes} [Fri Jun  9 15:35:21 2017] GET /register1/?uname=0000000000 => generated 84 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10533|app: 0|req: 44/161] 192.168.61.133 () {42 vars in 736 bytes} [Fri Jun  9 15:35:21 2017] GET /register1/?uname=0000000000 => generated 84 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10531|app: 0|req: 50/162] 192.168.61.133 () {42 vars in 736 bytes} [Fri Jun  9 15:35:22 2017] GET /register1/?uname=0000000000 => generated 84 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10533|app: 0|req: 45/163] 192.168.61.133 () {42 vars in 736 bytes} [Fri Jun  9 15:35:22 2017] GET /register1/?uname=0000000000 => generated 84 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10529|app: 0|req: 38/164] 192.168.61.133 () {42 vars in 736 bytes} [Fri Jun  9 15:35:22 2017] GET /register1/?uname=0000000000 => generated 84 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10531|app: 0|req: 51/165] 192.168.61.133 () {42 vars in 736 bytes} [Fri Jun  9 15:35:22 2017] GET /register1/?uname=0000000000 => generated 84 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10529|app: 0|req: 39/166] 192.168.61.133 () {42 vars in 736 bytes} [Fri Jun  9 15:35:22 2017] GET /register1/?uname=0000000000 => generated 84 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10531|app: 0|req: 52/167] 192.168.61.133 () {42 vars in 736 bytes} [Fri Jun  9 15:35:23 2017] GET /register1/?uname=0000000000 => generated 84 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10533|app: 0|req: 46/168] 192.168.61.133 () {42 vars in 736 bytes} [Fri Jun  9 15:35:23 2017] GET /register1/?uname=0000000000 => generated 84 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10533|app: 0|req: 47/169] 192.168.61.133 () {42 vars in 736 bytes} [Fri Jun  9 15:35:23 2017] GET /register1/?uname=0000000000 => generated 84 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10530|app: 0|req: 32/170] 192.168.61.133 () {42 vars in 736 bytes} [Fri Jun  9 15:35:23 2017] GET /register1/?uname=0000000000 => generated 84 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10531|app: 0|req: 53/171] 192.168.61.133 () {42 vars in 736 bytes} [Fri Jun  9 15:35:23 2017] GET /register1/?uname=0000000000 => generated 84 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10530|app: 0|req: 33/172] 192.168.61.133 () {42 vars in 736 bytes} [Fri Jun  9 15:35:24 2017] GET /register1/?uname=0000000000 => generated 84 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10531|app: 0|req: 54/173] 192.168.61.133 () {42 vars in 736 bytes} [Fri Jun  9 15:35:24 2017] GET /register1/?uname=0000000000 => generated 84 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10529|app: 0|req: 40/174] 192.168.61.133 () {42 vars in 736 bytes} [Fri Jun  9 15:35:24 2017] GET /register1/?uname=0000000000 => generated 84 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10529|app: 0|req: 41/175] 192.168.61.133 () {42 vars in 772 bytes} [Fri Jun  9 15:35:25 2017] GET /urls/login/ => generated 2582 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+[pid: 10531|app: 0|req: 55/176] 192.168.61.133 () {50 vars in 959 bytes} [Fri Jun  9 15:35:41 2017] POST /urls/pic_handle1/ => generated 0 bytes in 74 msecs (HTTP/1.1 302) 7 headers in 428 bytes (1 switches on core 1)
+[pid: 10529|app: 0|req: 42/177] 192.168.61.133 () {44 vars in 822 bytes} [Fri Jun  9 15:35:41 2017] GET / => generated 13328 bytes in 80 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 10529|app: 0|req: 43/178] 192.168.61.133 () {42 vars in 808 bytes} [Fri Jun  9 15:35:44 2017] GET /urls/loginout/ => generated 0 bytes in 102 msecs (HTTP/1.1 302) 4 headers in 208 bytes (1 switches on core 0)
+[pid: 10531|app: 0|req: 56/179] 192.168.61.133 () {42 vars in 736 bytes} [Fri Jun  9 15:35:44 2017] GET / => generated 13329 bytes in 57 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 10531|app: 0|req: 57/180] 192.168.61.133 () {42 vars in 780 bytes} [Fri Jun  9 15:35:44 2017] GET /urls/user_center_info/ => generated 0 bytes in 6 msecs (HTTP/1.1 302) 5 headers in 202 bytes (1 switches on core 1)
+[pid: 10530|app: 0|req: 34/181] 192.168.61.133 () {42 vars in 789 bytes} [Fri Jun  9 15:35:44 2017] GET /urls/login/ => generated 2582 bytes in 6 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+[pid: 10529|app: 0|req: 44/182] 192.168.61.133 () {42 vars in 806 bytes} [Fri Jun  9 15:35:46 2017] GET /urls/register/ => generated 2593 bytes in 1 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+[pid: 10530|app: 0|req: 35/183] 192.168.61.133 () {44 vars in 837 bytes} [Fri Jun  9 15:36:30 2017] GET /urls/register/ => generated 2585 bytes in 1 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+[pid: 10530|app: 0|req: 36/184] 192.168.61.133 () {44 vars in 837 bytes} [Fri Jun  9 15:36:31 2017] GET /urls/register/ => generated 2585 bytes in 3 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+[pid: 10533|app: 0|req: 48/185] 192.168.61.133 () {44 vars in 837 bytes} [Fri Jun  9 15:36:32 2017] GET /urls/register/ => generated 2585 bytes in 4 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+[pid: 10533|app: 0|req: 49/186] 192.168.61.133 () {44 vars in 837 bytes} [Fri Jun  9 15:36:33 2017] GET /urls/register/ => generated 2585 bytes in 1 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+[pid: 10530|app: 0|req: 37/187] 192.168.61.133 () {44 vars in 837 bytes} [Fri Jun  9 15:36:34 2017] GET /urls/register/ => generated 2585 bytes in 1 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+[pid: 10529|app: 0|req: 45/188] 192.168.61.133 () {44 vars in 837 bytes} [Fri Jun  9 15:36:34 2017] GET /urls/register/ => generated 2585 bytes in 1 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+[pid: 10529|app: 0|req: 46/189] 192.168.61.133 () {40 vars in 698 bytes} [Fri Jun  9 15:38:29 2017] GET / => generated 13329 bytes in 86 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 10531|app: 0|req: 58/190] 192.168.61.133 () {40 vars in 652 bytes} [Fri Jun  9 15:38:29 2017] GET /favicon.ico => generated 85 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10529|app: 0|req: 47/191] 192.168.61.133 () {42 vars in 764 bytes} [Fri Jun  9 15:38:31 2017] GET /urls/register/ => generated 2585 bytes in 1 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+[pid: 10531|app: 0|req: 59/192] 192.168.61.133 () {42 vars in 728 bytes} [Fri Jun  9 15:38:35 2017] GET /register1/?uname=qazwsx => generated 84 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10530|app: 0|req: 38/193] 192.168.61.133 () {42 vars in 736 bytes} [Fri Jun  9 15:38:54 2017] GET /register1/?uname=1234567890 => generated 84 bytes in 6 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 10530|app: 0|req: 39/194] 192.168.61.133 () {42 vars in 736 bytes} [Fri Jun  9 15:38:54 2017] GET /register1/?uname=1234567890 => generated 84 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 10533|app: 0|req: 50/195] 192.168.61.133 () {50 vars in 960 bytes} [Fri Jun  9 15:38:54 2017] POST /urls/pic_handle/ => generated 2592 bytes in 155 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+[pid: 10531|app: 0|req: 60/196] 192.168.61.133 () {50 vars in 962 bytes} [Fri Jun  9 15:39:12 2017] POST /urls/pic_handle1/ => generated 0 bytes in 112 msecs (HTTP/1.1 302) 7 headers in 428 bytes (1 switches on core 0)
+[pid: 10530|app: 0|req: 40/197] 192.168.61.133 () {44 vars in 827 bytes} [Fri Jun  9 15:39:12 2017] GET / => generated 13326 bytes in 83 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+Building prefix dict from the default dictionary ...
+Dumping model to file cache /tmp/jieba.cache
+Loading model cost 3.520 seconds.
+Prefix dict has been built succesfully.
+[pid: 10533|app: 0|req: 51/198] 192.168.61.133 () {42 vars in 805 bytes} [Fri Jun  9 15:39:18 2017] GET /detail/?a=361 => generated 5913 bytes in 4549 msecs (HTTP/1.1 200) 4 headers in 133 bytes (1 switches on core 0)
+[pid: 10533|app: 0|req: 52/199] 192.168.61.133 () {42 vars in 766 bytes} [Fri Jun  9 15:39:34 2017] GET /cart/add361_20/ => generated 12 bytes in 137 msecs (HTTP/1.1 200) 3 headers in 94 bytes (1 switches on core 1)
+[pid: 10530|app: 0|req: 41/200] 192.168.61.133 () {42 vars in 806 bytes} [Fri Jun  9 15:39:38 2017] GET / => generated 13326 bytes in 182 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.591 seconds.
+Prefix dict has been built succesfully.
+[pid: 10529|app: 0|req: 48/201] 192.168.61.133 () {42 vars in 815 bytes} [Fri Jun  9 15:39:41 2017] GET /detail/?a=391 => generated 6105 bytes in 849 msecs (HTTP/1.1 200) 4 headers in 142 bytes (1 switches on core 1)
+[pid: 10533|app: 0|req: 53/202] 192.168.61.133 () {42 vars in 773 bytes} [Fri Jun  9 15:39:47 2017] GET /cart/add391_2/ => generated 12 bytes in 151 msecs (HTTP/1.1 200) 3 headers in 94 bytes (1 switches on core 0)
+[pid: 10531|app: 0|req: 61/203] 192.168.61.133 () {42 vars in 815 bytes} [Fri Jun  9 15:39:49 2017] GET / => generated 13326 bytes in 136 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.530 seconds.
+Prefix dict has been built succesfully.
+[pid: 10531|app: 0|req: 62/204] 192.168.61.133 () {42 vars in 824 bytes} [Fri Jun  9 15:39:54 2017] GET /detail/?a=421 => generated 5983 bytes in 1105 msecs (HTTP/1.1 200) 4 headers in 149 bytes (1 switches on core 0)
+[pid: 10531|app: 0|req: 63/205] 192.168.61.133 () {42 vars in 782 bytes} [Fri Jun  9 15:40:01 2017] GET /cart/add421_80/ => generated 12 bytes in 98 msecs (HTTP/1.1 200) 3 headers in 94 bytes (1 switches on core 1)
+[pid: 10529|app: 0|req: 49/206] 192.168.61.133 () {42 vars in 822 bytes} [Fri Jun  9 15:40:04 2017] GET / => generated 13326 bytes in 154 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 10529|app: 0|req: 50/207] 192.168.61.133 () {42 vars in 831 bytes} [Fri Jun  9 15:40:06 2017] GET /detail/?a=452 => generated 6113 bytes in 178 msecs (HTTP/1.1 200) 4 headers in 156 bytes (1 switches on core 1)
+[pid: 10529|app: 0|req: 51/208] 192.168.61.133 () {42 vars in 829 bytes} [Fri Jun  9 15:40:08 2017] GET / => generated 13326 bytes in 99 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 10531|app: 0|req: 64/209] 192.168.61.133 () {42 vars in 838 bytes} [Fri Jun  9 15:40:11 2017] GET /detail/?a=482 => generated 6131 bytes in 217 msecs (HTTP/1.1 200) 4 headers in 163 bytes (1 switches on core 0)
+[pid: 10531|app: 0|req: 65/210] 192.168.61.133 () {42 vars in 796 bytes} [Fri Jun  9 15:40:16 2017] GET /cart/add482_50/ => generated 12 bytes in 123 msecs (HTTP/1.1 200) 3 headers in 94 bytes (1 switches on core 1)
+[pid: 10530|app: 0|req: 42/211] 192.168.61.133 () {42 vars in 853 bytes} [Fri Jun  9 15:40:19 2017] GET /cart/cart/ => generated 8721 bytes in 66 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 10529|app: 0|req: 52/212] 192.168.61.133 () {42 vars in 911 bytes} [Fri Jun  9 15:40:23 2017] GET /cart/place_order/?gid=1&gid=2&gid=3&gid=4 => generated 6459 bytes in 287 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+[pid: 10529|app: 0|req: 53/213] 192.168.61.133 () {50 vars in 1063 bytes} [Fri Jun  9 15:40:32 2017] POST /order/order/ => generated 0 bytes in 703 msecs (HTTP/1.1 302) 4 headers in 149 bytes (1 switches on core 0)
+[pid: 10530|app: 0|req: 43/214] 192.168.61.133 () {44 vars in 912 bytes} [Fri Jun  9 15:40:33 2017] GET /cart/cart/ => generated 8721 bytes in 87 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 10531|app: 0|req: 66/215] 192.168.61.133 () {42 vars in 874 bytes} [Fri Jun  9 15:40:40 2017] GET /urls/user_center_info/ => generated 5128 bytes in 56 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 10531|app: 0|req: 67/216] 192.168.61.133 () {42 vars in 888 bytes} [Fri Jun  9 15:40:42 2017] GET /urls/user_center_order/ => generated 3306 bytes in 82 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 10533|app: 0|req: 54/217] 192.168.61.133 () {42 vars in 887 bytes} [Fri Jun  9 15:40:46 2017] GET /urls/user_center_info/ => generated 5128 bytes in 19 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 10531|app: 0|req: 68/218] 192.168.61.133 () {42 vars in 888 bytes} [Fri Jun  9 15:40:47 2017] GET /urls/user_center_order/ => generated 3306 bytes in 13 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 10533|app: 0|req: 55/219] 192.168.61.133 () {42 vars in 887 bytes} [Fri Jun  9 15:40:48 2017] GET /urls/user_center_site/ => generated 3699 bytes in 24 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+[pid: 10530|app: 0|req: 44/220] 192.168.61.133 () {42 vars in 888 bytes} [Fri Jun  9 15:40:49 2017] GET /urls/user_center_order/ => generated 3306 bytes in 9 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 10530|app: 0|req: 45/221] 192.168.61.133 () {42 vars in 863 bytes} [Fri Jun  9 15:40:59 2017] GET /cart/cart/ => generated 8721 bytes in 110 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 10531|app: 0|req: 69/222] 192.168.61.133 () {42 vars in 911 bytes} [Fri Jun  9 15:41:13 2017] GET /cart/place_order/?gid=1&gid=2&gid=3&gid=4 => generated 6459 bytes in 116 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.596 seconds.
+Prefix dict has been built succesfully.
+[pid: 10530|app: 0|req: 46/223] 192.168.61.133 () {50 vars in 1063 bytes} [Fri Jun  9 15:41:17 2017] POST /order/order/ => generated 0 bytes in 1340 msecs (HTTP/1.1 302) 4 headers in 149 bytes (1 switches on core 1)
+[pid: 10531|app: 0|req: 70/224] 192.168.61.133 () {44 vars in 912 bytes} [Fri Jun  9 15:41:19 2017] GET /cart/cart/ => generated 8721 bytes in 71 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 10529|app: 0|req: 54/225] 192.168.61.133 () {42 vars in 874 bytes} [Fri Jun  9 15:41:28 2017] GET /urls/user_center_info/ => generated 5128 bytes in 75 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 10529|app: 0|req: 55/226] 192.168.61.133 () {42 vars in 888 bytes} [Fri Jun  9 15:41:30 2017] GET /urls/user_center_order/ => generated 3306 bytes in 28 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 10531|app: 0|req: 71/227] 192.168.61.133 () {42 vars in 863 bytes} [Fri Jun  9 15:41:32 2017] GET /cart/cart/ => generated 8721 bytes in 31 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 10531|app: 0|req: 72/228] 192.168.61.133 () {42 vars in 826 bytes} [Fri Jun  9 15:43:09 2017] GET /cart/count_change/?id=3&count=68 => generated 27 bytes in 428 msecs (HTTP/1.1 500) 2 headers in 92 bytes (1 switches on core 0)
+[pid: 10531|app: 0|req: 73/229] 192.168.61.133 () {42 vars in 826 bytes} [Fri Jun  9 15:43:09 2017] GET /cart/count_change/?id=3&count=68 => generated 27 bytes in 82 msecs (HTTP/1.1 500) 2 headers in 92 bytes (1 switches on core 1)
+[pid: 10531|app: 0|req: 74/230] 192.168.61.133 () {42 vars in 826 bytes} [Fri Jun  9 15:43:09 2017] GET /cart/count_change/?id=3&count=68 => generated 27 bytes in 35 msecs (HTTP/1.1 500) 2 headers in 92 bytes (1 switches on core 0)
+[pid: 10531|app: 0|req: 75/231] 192.168.61.133 () {42 vars in 826 bytes} [Fri Jun  9 15:43:09 2017] GET /cart/count_change/?id=3&count=68 => generated 27 bytes in 12 msecs (HTTP/1.1 500) 2 headers in 92 bytes (1 switches on core 1)
+[pid: 10533|app: 0|req: 56/232] 192.168.61.133 () {42 vars in 826 bytes} [Fri Jun  9 15:43:09 2017] GET /cart/count_change/?id=3&count=68 => generated 27 bytes in 52 msecs (HTTP/1.1 500) 2 headers in 92 bytes (1 switches on core 1)
+[pid: 10531|app: 0|req: 76/233] 192.168.61.133 () {42 vars in 826 bytes} [Fri Jun  9 15:43:10 2017] GET /cart/count_change/?id=3&count=68 => generated 27 bytes in 31 msecs (HTTP/1.1 500) 2 headers in 92 bytes (1 switches on core 0)
+[pid: 10531|app: 0|req: 77/234] 192.168.61.133 () {42 vars in 826 bytes} [Fri Jun  9 15:43:10 2017] GET /cart/count_change/?id=3&count=68 => generated 27 bytes in 24 msecs (HTTP/1.1 500) 2 headers in 92 bytes (1 switches on core 1)
+[pid: 10531|app: 0|req: 78/235] 192.168.61.133 () {42 vars in 826 bytes} [Fri Jun  9 15:43:10 2017] GET /cart/count_change/?id=3&count=68 => generated 27 bytes in 11 msecs (HTTP/1.1 500) 2 headers in 92 bytes (1 switches on core 0)
+[pid: 10530|app: 0|req: 47/236] 192.168.61.133 () {42 vars in 826 bytes} [Fri Jun  9 15:43:10 2017] GET /cart/count_change/?id=3&count=68 => generated 27 bytes in 124 msecs (HTTP/1.1 500) 2 headers in 92 bytes (1 switches on core 0)
+[pid: 10531|app: 0|req: 79/237] 192.168.61.133 () {42 vars in 826 bytes} [Fri Jun  9 15:43:11 2017] GET /cart/count_change/?id=3&count=68 => generated 27 bytes in 56 msecs (HTTP/1.1 500) 2 headers in 92 bytes (1 switches on core 1)
+[pid: 10529|app: 0|req: 56/238] 192.168.61.133 () {42 vars in 826 bytes} [Fri Jun  9 15:43:11 2017] GET /cart/count_change/?id=3&count=68 => generated 27 bytes in 61 msecs (HTTP/1.1 500) 2 headers in 92 bytes (1 switches on core 1)
+[pid: 10530|app: 0|req: 48/239] 192.168.61.133 () {42 vars in 826 bytes} [Fri Jun  9 15:43:12 2017] GET /cart/count_change/?id=3&count=68 => generated 27 bytes in 25 msecs (HTTP/1.1 500) 2 headers in 92 bytes (1 switches on core 1)
+[pid: 10529|app: 0|req: 57/240] 192.168.61.133 () {42 vars in 826 bytes} [Fri Jun  9 15:43:12 2017] GET /cart/count_change/?id=3&count=67 => generated 27 bytes in 50 msecs (HTTP/1.1 500) 2 headers in 92 bytes (1 switches on core 0)
+[pid: 10530|app: 0|req: 49/241] 192.168.61.133 () {42 vars in 826 bytes} [Fri Jun  9 15:43:13 2017] GET /cart/count_change/?id=3&count=66 => generated 27 bytes in 26 msecs (HTTP/1.1 500) 2 headers in 92 bytes (1 switches on core 0)
+[pid: 10533|app: 0|req: 57/242] 192.168.61.133 () {42 vars in 826 bytes} [Fri Jun  9 15:43:13 2017] GET /cart/count_change/?id=3&count=65 => generated 27 bytes in 34 msecs (HTTP/1.1 500) 2 headers in 92 bytes (1 switches on core 0)
+[pid: 10533|app: 0|req: 58/243] 192.168.61.133 () {42 vars in 826 bytes} [Fri Jun  9 15:43:22 2017] GET /cart/count_change/?id=3&count=65 => generated 27 bytes in 104 msecs (HTTP/1.1 500) 2 headers in 92 bytes (1 switches on core 1)
+[pid: 10529|app: 0|req: 58/244] 192.168.61.133 () {44 vars in 894 bytes} [Fri Jun  9 15:43:32 2017] GET /cart/cart/ => generated 8721 bytes in 65 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 10529|app: 0|req: 59/245] 192.168.61.133 () {42 vars in 911 bytes} [Fri Jun  9 15:43:38 2017] GET /cart/place_order/?gid=1&gid=2&gid=3&gid=4 => generated 6459 bytes in 134 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+[pid: 10531|app: 0|req: 80/246] 192.168.61.133 () {50 vars in 1063 bytes} [Fri Jun  9 15:43:56 2017] POST /order/order/ => generated 0 bytes in 1070 msecs (HTTP/1.1 302) 4 headers in 162 bytes (1 switches on core 0)
+[pid: 10531|app: 0|req: 81/247] 192.168.61.133 () {44 vars in 938 bytes} [Fri Jun  9 15:43:57 2017] GET /urls/user_center_order/ => generated 5308 bytes in 139 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 10530|app: 0|req: 50/248] 192.168.61.133 () {42 vars in 923 bytes} [Fri Jun  9 15:44:07 2017] GET /urls/user_center_orders2017060915435612/ => generated 0 bytes in 86 msecs (HTTP/1.1 302) 3 headers in 148 bytes (1 switches on core 1)
+[pid: 10533|app: 0|req: 59/249] 192.168.61.133 () {42 vars in 889 bytes} [Fri Jun  9 15:44:07 2017] GET /urls/user_center_order/ => generated 5231 bytes in 50 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
